@@ -1,12 +1,20 @@
 # Summary
 
+### Part 1
+
 * [Introduction](introduction.md)
 * [Creating a viewer](creatingAViewer.md)
 * [Loading models](loadingModels.md)
+
+### Querying
+
 * [Querying models and objects](queryingModelsAndObjects.md)
 * [Querying boundaries](queryingBoundaries.md)
 * [Querying object geometries](queryingObjectGeometries.md)
 * [Assigning types to objects](assigningTypesToObjects.md)
+
+### Camera
+
 * [Controlling the camera](controllingTheCamera.md)
 * [Fitting things in view](fittingThingsInView.md)
 * [Panning the camera](panningTheCamera.md)
@@ -14,6 +22,9 @@
 * [Zooming the camera](zoomingTheCamera.md)
 * [Camera projections](cameraProjections.md)
 * [CameraControl helper](cameraControlHelper.md)
+
+### Effects
+
 * [Showing and hiding objects](showingAndHidingObjects.md)
 * [Transforming models and objects](transformingModelsAndObjects.md)
 * [Outlining objects](outlingObjects.md)
