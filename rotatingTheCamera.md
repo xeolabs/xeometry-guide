@@ -9,6 +9,8 @@ Vertical rotation is gimbal-locked to the World-space Y-axis by default. You can
 viewer.lockGimbalY(false);
 ````
 
+## Examples
+
 Rotate the camera's ````eye```` about ````look````, pivoting around ````up````:
 ````javascript
 viewer.rotateEyeY(10);
