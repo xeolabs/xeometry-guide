@@ -2,6 +2,8 @@
 
 You can independently show and hide each object in your viewer.
 
+## Examples
+
 Show everything in a viewer:
 ````javascript
 viewer.show();
