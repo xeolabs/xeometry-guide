@@ -6,23 +6,23 @@ the domain of your application. When using xeometry as an IFC viewer, for exampl
 
 When you have assigned types to your objects, then you can specify types as the targets for various xeometry methods.
 
-**Example 1** Assign types to two objects
+**Example 1.** Assign types to two objects
 ````javascript
 viewer.setType("house#12", "IfcFlowController");
 viewer.setType("house#23", "IfcFlowFitting");
 ````
-
+.
 **Example 2** Get the type of an object
 ````javascript
 var type = viewer.getType("house#12");
 ````
 
-**Example 3** Get all types in the viewer
+**Example 3.** Get all types in the viewer
 ````javascript
 var types = viewer.getTypes();
 ````
 
-**Example 4** Get all objects of the given type
+**Example 4.** Get all objects of the given type
 ````javascript
 var typeObjects = viewer.getObjects("ifcCurtainWall");
 ````
