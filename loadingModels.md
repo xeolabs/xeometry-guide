@@ -9,18 +9,26 @@ load cameras or lights because the viewer manages those globally, for all the mo
 
 Loading two separate models into a viewer:
 ````javascript
-viewer.loadModel("saw", "./Reciprocating_Saw.gltf", function () { /* Loaded */ });
+viewer.loadModel("saw", "./Reciprocating_Saw.gltf", function () {
+    // Loaded
+ });
 
-viewer.loadModel("gearbox", "./GearboxAssy.gltf", function () { /* Loaded */ });
+viewer.loadModel("gearbox", "./GearboxAssy.gltf", function () {
+    // Loaded
+});
 ````
 
 Loading two copies of the same model into a viewer:
 ````javascript
-viewer.loadModel("saw1", "./Reciprocating_Saw.gltf", function () { /* Loaded */ });
+viewer.loadModel("saw1", "./Reciprocating_Saw.gltf",  function () {
+    // Loaded
+});
 
-viewer.loadModel("saw2", "./Reciprocating_Saw.gltf", function () { /* Loaded */ });
+viewer.loadModel("saw2", "./Reciprocating_Saw.gltf",  function () {
+    // Loaded
+});
 ````
-
+`
 Unloading a model:
 ````javascript
 viewer.unloadModel("gearbox");
