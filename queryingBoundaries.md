@@ -6,7 +6,7 @@ A boundary is an axis-aligned bounding box \(_AABB_\) in World-space, given as a
 
 Transforming a model or object will update its boundary.
 
----
+### Examples
 
 Get the collective boundary of everything in a viewer:
 

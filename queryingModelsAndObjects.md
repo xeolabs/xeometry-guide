@@ -7,7 +7,7 @@ corresponds to a `node` element within its model's glTF file. If the `node` has 
 then that's used for the object part of the ID, eg. "saw\#outerCasing". Otherwise, the index of the `node` within  
 the flTF file's `nodes` section is used, eg. "saw\#23".
 
----
+### Examples
 
 Get all models:
 

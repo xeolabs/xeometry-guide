@@ -2,7 +2,7 @@
 
 You can zoom the camera incrementally, which changes the distance of `eye` from `look`.
 
----
+### Examples
 
 Zoom the `eye` towards `look` by 12.3 units:
 

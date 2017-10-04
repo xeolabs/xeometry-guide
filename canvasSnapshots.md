@@ -4,7 +4,7 @@ You can take a snapshot of your viewer, as a JPEG, PNG or BMP image.
 
 Snapshots are taken asynchronously.
 
----
+### Examples
 
 Grab a PNG image of the canvas, scaled to 500x500 pixels:
 

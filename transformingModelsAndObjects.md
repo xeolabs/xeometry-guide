@@ -19,7 +19,7 @@ Transforming an object will dynamically update its boundary and geometry vertex 
 Transforming a model will dynamically update its boundary, along with the boundary and geometry vertex positions of each  
 of its objects.
 
----
+### Examples
 
 Translate a model along the X axis, scale it, then rotate it 90 degrees about its X-axis:
 

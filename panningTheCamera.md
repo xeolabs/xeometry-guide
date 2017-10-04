@@ -8,7 +8,7 @@ Panning translates the camera's `eye` and `look` positions in unison.
 * Vertical panning moves the camera along `up`.
 * Forward and back panning moves the camera along the `eye->look` vector.
 
----
+### Examples
 
 Pan camera `eye` and `look` five units along the axis orthogonal to `eye->look` and `up`:
 

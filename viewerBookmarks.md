@@ -10,7 +10,7 @@ You can save and restore the state of a viewer as a JSON bookmark. A bookmark co
 * clipping planes
 * outline appearance
 
----
+### Examples
 
 Save model state to JSON bookmark, clear model then restore it again from the bookmark:
 

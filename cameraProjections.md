@@ -2,7 +2,7 @@
 
 You can switch the camera between perspective and orthographic projection at any time.
 
----
+### Examples
 
 Switch camera to orthographic projection:
 
