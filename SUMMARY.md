@@ -2,13 +2,11 @@
 
 * [Introduction](introduction.md)
 * [Creating a viewer](creatingAViewer.md)
-* [Loading models](loadingModels.md)
-
+* [Loading models](loadingModels.md
 * Querying
     * [Querying models and objects](queryingModelsAndObjects.md)
     * [Querying boundaries](queryingBoundaries.md)
     * [Querying object geometries](queryingObjectGeometries.md)
-
 * [Assigning types to objects](assigningTypesToObjects.md)
 * [Controlling the camera](controllingTheCamera.md)
 * [Fitting things in view](fittingThingsInView.md)
