@@ -1,6 +1,6 @@
 # Picking objects
 
-You can select objects by picking or raycasting. Picking involves finding objects at given canvas coordinates,  
+You can select objects by picking or raycasting. Picking involves finding objects at given canvas coordinates,
 while raycasting involves finding objects that intersect an arbitrarily-positioned World-space ray.
 
 For both of these, you have the option of getting either just the object, or the object plus information  

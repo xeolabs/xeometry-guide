@@ -36,7 +36,7 @@ viewer.viewFit([-50,-25,-50, 50, 25, 50], function() {
 ```
 
 > A boundary is an axis-aligned bounding box \(_AABB_\) in World-space, given as an array of  
-> values `[xmin, ymin, zmin, xmax, ymax, zmax]`.[^1]
+> values `[xmin, ymin, zmin, xmax, ymax, zmax]`.
 
 Fly camera to fit a model in view:
 
@@ -116,8 +116,3 @@ Set how much of the field of view that a target boundary will occupy when flying
 viewer.setViewFitFOV(20); // Degrees
 var fitFOV = viewer.fitFOV();
 ```
-
-
-
-[^1]: A boundary is an axis-aligned bounding box \(_AABB_\) in World-space, given as an array of values `[xmin, ymin, zmin, xmax, ymax, zmax]`.
-
