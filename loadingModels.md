@@ -7,7 +7,7 @@ You can load multiple glTF 2.0 models into a viewer at the same time, as well as
 metallic material workflow, xeometry also supports specular and common materials. It does not
 load cameras or lights because the viewer manages those globally, for all the models you load.
 
-Loading two separate models into a viewer:
+**Example 1** Loading two separate models into a viewer
 ````javascript
 viewer.loadModel("saw", "./Reciprocating_Saw.gltf", function () {
     // Loaded
@@ -18,7 +18,7 @@ viewer.loadModel("gearbox", "./GearboxAssy.gltf", function () {
 });
 ````
 
-Loading two copies of the same model into a viewer:
+**Example 2** Loading two copies of the same model into a viewer
 ````javascript
 viewer.loadModel("saw1", "./Reciprocating_Saw.gltf",  function () {
     // Loaded
@@ -29,7 +29,7 @@ viewer.loadModel("saw2", "./Reciprocating_Saw.gltf",  function () {
 });
 ````
 `
-Unloading a model:
+**Example 3** Unloading a model
 ````javascript
 viewer.unloadModel("gearbox");
 ````
