@@ -24,7 +24,8 @@ hit = viewer.pickSurface([234, 567]);
 if (hit) {
     var worldPos = hit.worldPos;
     console.log("object picked: " + hit.id);
-    console.log("surface coordinates: " + worldPos[0] + "," + worldPos[1] + "," + worldPos[2]);
+    console.log("surface coordinates: "
+        + worldPos[0] + "," + worldPos[1] + "," + worldPos[2]);
 }
 ```
 
@@ -44,7 +45,8 @@ hit = viewer.rayCastSurface([0,0,-100], [0,0,1]); // Origin, dir
 if (hit) {
     var worldPos = hit.worldPos;
     console.log("object raycasted: " + hit.id);
-    console.log("surface coordinates: " + worldPos[0] + "," + worldPos[1] + "," + worldPos[2]);
+    console.log("surface coordinates: "
+        + worldPos[0] + "," + worldPos[1] + "," + worldPos[2]);
 }
 ```
 
