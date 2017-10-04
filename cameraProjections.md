@@ -1,5 +1,3 @@
-[![](http://xeolabs.com/xeometry/assets/sawObjects.png)](http://xeogl.org/examples/#presentation_annotations_tronTank)
-
 # Camera projections
 
 You can switch the camera between perspective and orthographic projection at any time.
@@ -27,5 +25,6 @@ viewer.setPerspectiveFOV(45); // Field of view in degrees
 viewer.setPerspectiveNear(0.1);
 viewer.setPerspectiveFar(10000);
 ````
+
 
 Note that you can get and set properties for each projection at any time, regardless of which one is active.
