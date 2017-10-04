@@ -1,4 +1,4 @@
-## ![](/assets/coverTest2.png)
+## ![](/assets/coverTest3.png)
 
 ## 
 
