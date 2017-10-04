@@ -1,3 +1,5 @@
+[![](http://xeolabs.com/xeometry/assets/sawObjects.png)](http://xeogl.org/examples/#presentation_annotations_tronTank)
+
 # Camera projections
 
 You can switch the camera between perspective and orthographic projection at any time.
