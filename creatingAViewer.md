@@ -1,0 +1,25 @@
+# Creating a viewer
+
+Your first step is to link to the [xeometry library](http://xeolabs.com/xeometry/build/xeometry.min.js):
+````html
+<script src="xeometry.js"></script>
+````
+
+Creating a viewer with a default internally-created canvas that fills the page:
+````javascript
+var viewer = new xeometry.Viewer();
+````
+
+Creating a viewer with an existing canvas:
+````javascript
+var viewer = new xeometry.Viewer({
+    canvasId: "myCanvas"
+});
+````
+
+You can create multiple viewers in the same page.
+
+Destroying a viewer:
+````javascript
+viewer.destroy();
+````
