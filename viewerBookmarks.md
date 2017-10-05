@@ -65,6 +65,9 @@ The bookmark will look like this:
 }
 ````
 
+For compactness, a bookmark only saves state that differs from the defaults. Therefore, our bookmark only saved the
+updates that we programmed, such as the camera position, the model we loaded, its rotation, and the two hidden objects.
+
 We can now load the bookmark back into our viewer, or into a different viewer, to restore the scene that we
 created programmatically earlier:
 
@@ -72,6 +75,6 @@ created programmatically earlier:
 viewer.setBookmark(bookmark, function() { /* Loaded */ });
 
 var viewer2 = new xeometry.Viewer();
-viewers.setBookmark(bookmark, function() { /* Loaded */ });
+viewer2.setBookmark(bookmark, function() { /* Loaded */ });
 ```
 
