@@ -9,13 +9,13 @@
 
 * [Creating a viewer](creatingAViewer.md)
 * [Loading models](loadingModels.md)
+* [Assigning types to objects](assigningTypesToObjects.md)
 
-## Querying Content
+## Querying content
 
 * [Querying models and objects](queryingModelsAndObjects.md)
 * [Querying boundaries](queryingBoundaries.md)
-* [Querying object geometries](queryingObjectGeometries.md)
-* [Assigning types to objects](assigningTypesToObjects.md)
+* [Querying geometry](queryingObjectGeometries.md)
 
 ## Camera Control
 
@@ -27,7 +27,7 @@
 * [Camera projections](cameraProjections.md)
 * [CameraControl helper](cameraControlHelper.md)
 
-## Effects
+## Customizing the view
 
 * [Showing and hiding objects](showingAndHidingObjects.md)
 * [Transforming models and objects](transformingModelsAndObjects.md)
