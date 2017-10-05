@@ -1,5 +1,7 @@
 # Summary
 
+## xeometry
+
 * [Cover](README.md)
 * [Introduction](introduction.md)
 
@@ -38,6 +40,6 @@
 
 ## Appendix
 
-* [Glossary]()
-* [FAQ]()
+* Glossary
+* FAQ
 
