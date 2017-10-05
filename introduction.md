@@ -14,14 +14,51 @@ transparent to reveal the inner workings, then positioning the camera to fit eve
 [![](http://xeolabs.com/xeometry/assets/sawObjects.png)](http://xeolabs.com/xeometry/examples/#effects_opacity)
 
 ```javascript
-var viewer = new xeometry.Viewer({ canvasId: "theCanvas" });
+var viewer = new xeometry.Viewer();
 
-viewer.loadModel("saw", "models/Reciprocating_Saw.gltf", function () {
-     viewer.setOpacity(["saw#0", "saw#1", "saw#2", "saw#3", "saw#11"], 0.3);
-     viewer.viewFit("saw");
+viewer.setEye([-110.89, 0, 456.67]);
+viewer.setLook([-110.89, 0, 44.85]);
+
+viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/glTF/ReciprocatingSaw.gltf", function () {
+    viewer.setRotate("saw", [90, 0, 0]);
+    viewer.setOpacity(["saw#1.1", "saw#1.2"], 0.3);
 });
 ```
 
+If we then save a bookmark:
+
+````javascript
+var bookmark = viewer.getBookmark();
+````
+
+it's going to look this:
+
+````json
+{
+	"models": [
+		{
+			"id": "saw",
+			"src": "models/gltf/ReciprocatingSaw/glTF/ReciprocatingSaw.gltf",
+			"rotate": [90,0,0]
+		}
+	],
+	"objects": [
+		{
+			"id": "saw#1.1",
+			"opacity": 0.3
+		},
+		{
+			"id": "saw#1.2",
+			"opacity": 0.3
+		}
+	],
+	"lookat": {
+		"eye": [-110.89,0,456.67],
+		"look": [-110.89,0,44.85],
+		"up": [0,1,0]
+	}
+}
+````
 Viewer methods generally get or set some property of a target element in the scene, such as the opacity of an object, or
 the position of the camera.
 
