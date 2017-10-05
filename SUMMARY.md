@@ -46,6 +46,6 @@
 
 ## Appendix
 
-* Glossary
-* FAQ
+* [FAQ](faq.md)
+* [Glossary](glossary.md)
 
