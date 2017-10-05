@@ -2,6 +2,8 @@
 
 You can fly or jump the camera to fit given models, objects, types or boundaries in view.
 
+### Examples
+
 Configure camera to fly for two seconds as it moves to each new target:
 
 ```javascript
@@ -116,3 +118,6 @@ Set how much of the field of view that a target boundary will occupy when flying
 viewer.setViewFitFOV(20); // Degrees
 var fitFOV = viewer.fitFOV();
 ```
+
+
+
