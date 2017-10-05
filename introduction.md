@@ -1,8 +1,14 @@
 # Introduction
 
-A xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) is a single class that wraps a [xeogl](http://xeogl.org) 3D engine in a set of simple data-driven methods focused on loading glTF models and manipulating scene content to create cool presentations.
+A xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) is a single class that wraps [xeogl](http://xeogl.org)
+(a WebGL-based 3D engine) in simple data-driven methods focused on loading glTF models and manipulating their
+objects to create cool presentations.
 
-The example below shows the idea. In this example, we're loading a glTF model of a reciprocating saw, setting some objects  
+Once you've loaded models, arranged the camera, tweaked objects and so forth, you can save the state of your viewer to
+a JSON bookmark object. You can then load that bookmark, perhaps into a different viewer instance, to exactly restore
+that view.
+
+The example below shows the idea. In this example, we're loading a glTF model of a reciprocating saw, setting some objects
 transparent to reveal the inner workings, then positioning the camera to fit everything in view.
 
 [![](http://xeolabs.com/xeometry/assets/sawObjects.png)](http://xeolabs.com/xeometry/examples/#effects_opacity)
@@ -16,7 +22,7 @@ viewer.loadModel("saw", "models/Reciprocating_Saw.gltf", function () {
 });
 ```
 
-Viewer methods generally get or set some property of a target element in the scene, such as the opacity of an object, or  
+Viewer methods generally get or set some property of a target element in the scene, such as the opacity of an object, or
 the position of the camera.
 
 Some of the things you can do with objects are:
