@@ -34,9 +34,15 @@
 * [Outlining objects](outlingObjects.md)
 * [Clipping](clipping.md)
 * [Annotations](annotations.md)
-* [Picking](pickingObjects.md)
-* [Canvas snapshots](canvasSnapshots.md)
+
+## Saving the view
+
 * [Viewer bookmarks](viewerBookmarks.md)
+* [Canvas snapshots](canvasSnapshots.md)
+
+## Picking
+
+* [Picking objects](pickingObjects.md)
 
 ## Appendix
 
