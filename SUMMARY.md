@@ -1,7 +1,10 @@
 # Summary
 
-* [Introduction](README.md)
+* [Cover](README.md)
 * [Introduction](introduction.md)
+
+## Getting started
+
 * [Creating a viewer](creatingAViewer.md)
 * [Loading models](loadingModels.md)
 
@@ -29,7 +32,12 @@
 * [Outlining objects](outlingObjects.md)
 * [Clipping](clipping.md)
 * [Annotations](annotations.md)
-* [Picking objects](pickingObjects.md)
+* [Picking](pickingObjects.md)
 * [Canvas snapshots](canvasSnapshots.md)
 * [Viewer bookmarks](viewerBookmarks.md)
+
+## Appendix
+
+* [Glossary]()
+* [FAQ]()
 
