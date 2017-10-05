@@ -17,7 +17,7 @@
 * [Querying boundaries](queryingBoundaries.md)
 * [Querying geometry](queryingObjectGeometries.md)
 
-## Camera Control
+## Camera control
 
 * [Controlling the camera](controllingTheCamera.md)
 * [Fitting things in view](fittingThingsInView.md)
