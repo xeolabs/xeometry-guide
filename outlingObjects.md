@@ -19,3 +19,31 @@ viewer.loadModel("gearbox", "GearboxAssy.gltf", function () {
     ]);
 });
 ````
+
+Outlining everything in a viewer:
+
+```javascript
+viewer.showOutline();
+```
+
+Outlining all objects in a model:
+
+```javascript
+viewer.hideOutline();
+viewer.showOutline("saw");
+```
+
+Outline given objects:
+
+```javascript
+viewer.hideOutline();
+viewer.showOutline(["saw#1", "saw#5"]);
+```
+
+Outline objects of the given types (see [Assigning types to objects](assigningTypesToObjects.md)):
+
+```javascript
+viewer.hideOutline();
+viewer.showOutline(["IfcFlowController", "IfcFlowFitting"]);
+```
+
