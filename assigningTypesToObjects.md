@@ -31,5 +31,22 @@ Get all objects of the given type:
 var typeObjects = viewer.getObjects("ifcCurtainWall");
 ```
 
+Making all objects tranparent except for the given types (see: [Making objects transparent](makingObjectsTransparent.md)):
+```javascript
+viewer.setOpacity(0.4);
+viewer.setOpacity(["IfcFlowController", "IfcFlowFitting"], 1.0);
+```
 
+Fly camera to fit all objects of the given types (see: [Fitting things in view](fittingThingsInView.md)):
 
+```javascript
+viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
+    // Camera arrived
+});
+```
+
+Get collective boundary of all objects of the given types  (see: [Fitting things in view](queryingBoundaries.md)):
+
+```javascript
+var objectsBoundary = viewer.getAABB(["IfcFlowController", "IfcFlowFitting"]);
+```
