@@ -26,7 +26,7 @@ Get collective boundary of two objects:
 var objectsBoundary = viewer.getAABB(["saw34", "saw5"]);
 ```
 
-Get collective boundary of all objects of the given types:
+Get collective boundary of all objects of the given types (see [Assigning types to objects](assigningTypesToObjects.md)):
 
 ```javascript
 var objectsBoundary = viewer.getAABB(["IfcFlowController", "IfcFlowFitting"]);
