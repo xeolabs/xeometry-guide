@@ -1,6 +1,4 @@
-<img src="https://github.com/pelednoam/mmvt/blob/master/misc/mmvt_logo.jpg" align="right" />
-
-# Camera projectiona
+# Camera projection
 
 You can switch the camera between perspective and orthographic projection at any time.
 
