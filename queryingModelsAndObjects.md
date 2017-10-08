@@ -33,5 +33,10 @@ Get an object's model:
 var model = viewer.getModel("saw#23");
 ```
 
+Get all objects of the given types (see [Assigning types to objects](assigningTypesToObjects.md)):
+
+```javascript
+viewer.getObjects(["IfcFlowController", "IfcFlowFitting"]);
+```
 
 

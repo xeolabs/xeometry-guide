@@ -1,7 +1,6 @@
 # Controlling the camera
 
-A viewer has a single camera that can be moved in orbit or first-person mode, directed to fit target  
-elements in view, and switched between perspective and orthographic projections.
+A viewer has a single camera that can be moved in orbit or first-person mode, directed to fit target elements in view, and switched between perspective and orthographic projections.
 
 ### Examples
 
@@ -20,6 +19,3 @@ viewer.setEye([0,0,-100]);
 viewer.setLook([0,0,0]);
 viewer.setUp([0,1,0]);
 ```
-
-
-

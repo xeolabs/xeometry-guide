@@ -1,7 +1,6 @@
 # Viewer bookmarks
 
-You can save and load complete snapshots of viewer state as JSON bookmarks. A bookmark contains all the viewer's state,
-including:
+You can save and load complete snapshots of viewer state as JSON bookmarks. A bookmark contains all the viewer's state, including:
 
 * models loaded,
 * object visibilities, opacities, outlines and types
@@ -9,12 +8,12 @@ including:
 * camera position and projection
 * annotations
 * clipping planes
+* light sources
 * outline appearance
 
 ### Example
 
-In the example below, we're creating a viewer, positioning the camera, loading a glTF model of a reciprocating saw, then
-hiding some objects, to reveal the inner workings.
+In the example below, we're creating a viewer, positioning the camera, loading a glTF model of a reciprocating saw, then hiding some objects, to reveal the inner workings.
 
 [![](http://xeolabs.com/xeometry/assets/sawObjects.png)](http://xeolabs.com/xeometry/examples/#effects_opacity)
 

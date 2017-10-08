@@ -30,6 +30,7 @@
 ## Customizing the view
 
 * [Showing and hiding objects](showingAndHidingObjects.md)
+* [Making objects transparent](makingObjectsTransparent.md)
 * [Transforming models and objects](transformingModelsAndObjects.md)
 * [Outlining objects](outlingObjects.md)
 * [Clipping](clipping.md)
