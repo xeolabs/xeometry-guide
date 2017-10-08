@@ -2,19 +2,24 @@
 
 You can make objects transparent, to reveal other objects behind or inside them.
 
-[![](assets/outlining.png)](http://xeolabs.com/xeometry/examples/#effects_outlining)
+[![](assets/transparency
+.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
 ````javascript
 var viewer = new xeometry.Viewer();
 
-viewer.loadModel("gearbox", "GearboxAssy.gltf", function () {
+viewer.setEye([-145.22, -32.97, 282.5]);
+viewer.setLook([-147.68, -20.64, 0]);
+viewer.setUp([0, 1, 0]);
 
-    viewer.viewFit();
+viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 
-    viewer.setOpacity(0.5);
+    viewer.setRotate("saw", [90, 0, 0]);
 
     viewer.setOpacity([
-        "gearbox#1", "gearbox#1.0", "gearbox#1.1", "gearbox#1.2" // ...
-    ], 1.0);
+        "saw#1", "saw#1.28", "saw#1.1",
+        "saw#1.0", "saw#1.2", "saw#1.3",
+        "saw#1.4", "saw#1.5", "saw#1.7"
+        ], 0.3);
 });
 ````

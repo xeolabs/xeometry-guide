@@ -2,7 +2,25 @@
 
 You can independently transform each model and object in your viewer.
 
-[![](http://xeolabs.com/xeometry/assets/sawObjects.png)](http://xeogl.org/examples/#presentation_annotations_tronTank)
+[![](assets/transforming.png)](http://xeolabs.com/xeometry/examples/#guidebook_transforming)
+
+````javascript
+var viewer = new xeometry.Viewer();
+
+viewer.setEye([-112.3, -32.33, 334.81]);
+viewer.setLook([-103.53, -20.64, 0]);
+viewer.setUp([0, 1, -0.01]);
+
+viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
+
+    // Transform model
+    viewer.setRotate("saw", [90, 0, 0]);
+
+    // Translate and rotate the cover panel
+    viewer.setTranslate("saw#1.1", [0,20,-70]);
+    viewer.setRotate("saw#1.1", [-120,0,0]);
+});
+````
 
 A transform consists of the following operations, applied in this order:
 
