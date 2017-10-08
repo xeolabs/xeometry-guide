@@ -30,8 +30,6 @@ viewer.loadModel("saw", "./ReciprocatingSaw.gltf", function () {
 });
 ```
 
-#### Saving to a bookmark
-
 We'll now save the state of our viewer to a bookmark:
 
 ````javascript
@@ -69,8 +67,6 @@ The bookmark will look like this:
 
 For compactness, a bookmark only saves state that differs from the defaults. Therefore, our bookmark only saved the
 updates that we programmed, such as the camera position, the model we loaded, its rotation, and the two hidden objects.
-
-#### Loading the bookmark
 
 We can now load the bookmark back into our viewer, or into a different viewer, to restore the scene that we
 created programmatically earlier.
