@@ -13,9 +13,7 @@ viewer.setLook([-147.68, -20.64, 0]);
 viewer.setUp([0, 1, 0]);
 
 viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
-
     viewer.setRotate("saw", [90, 0, 0]);
-
     viewer.setOpacity([
         "saw#1", "saw#1.28", "saw#1.1",
         "saw#1.0", "saw#1.2", "saw#1.3",
