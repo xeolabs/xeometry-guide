@@ -8,49 +8,54 @@ Once you've loaded models, arranged the camera, tweaked objects and so forth, yo
 a JSON bookmark object. You can then load that bookmark, perhaps into a different viewer instance, to exactly restore
 that view.
 
-The example below shows the idea. In this example, we're loading a glTF model of a reciprocating saw, setting some objects
-transparent to reveal the inner workings, then positioning the camera to fit everything in view.
+The example below shows the idea. In this example, we're positioning the camera, loading a glTF model of a reciprocating saw,
+making some objects transparent to reveal the inner workings, then positioning the camera to fit everything in view.
 
-[![](http://xeolabs.com/xeometry/assets/sawObjects.png)](http://xeolabs.com/xeometry/examples/#effects_opacity)
+[![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
 ```javascript
 var viewer = new xeometry.Viewer();
 
-viewer.setEye([-110.89, 0, 456.67]);
-viewer.setLook([-110.89, 0, 44.85]);
+viewer.setEye([-145.22, -32.97, 282.5]);
+viewer.setLook([-147.68, -20.64, 0]);
+viewer.setUp([0, 1, 0]);
 
-viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/glTF/ReciprocatingSaw.gltf", function () {
+viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
     viewer.setRotate("saw", [90, 0, 0]);
-    viewer.setOpacity(["saw#1.1", "saw#1.2"], 0.3);
+    viewer.setOpacity(["saw#1", "saw#1.28", "saw#1.1"], 0.3);
 });
 ```
 
-If we then save a bookmark:
+If we then save our viewer to a bookmark:
 
 ````javascript
 var bookmark = viewer.getBookmark();
 ````
 
-it's going to look this:
+the bookmark will look this:
 
 ````json
 {
 	"models": [
 		{
 			"id": "saw",
-			"src": "models/gltf/ReciprocatingSaw/glTF/ReciprocatingSaw.gltf",
+			"src": "./ReciprocatingSaw.gltf",
 			"rotate": [90,0,0]
 		}
 	],
 	"objects": [
 		{
-			"id": "saw#1.1",
+			"id": "saw#1",
 			"opacity": 0.3
 		},
 		{
-			"id": "saw#1.2",
-			"opacity": 0.3
-		}
+        	"id": "saw#1.28",
+        	"opacity": 0.3
+       	},
+        {
+        	"id": "saw#1.1",
+        	"opacity": 0.3
+       	}
 	],
 	"lookat": {
 		"eye": [-110.89,0,456.67],
