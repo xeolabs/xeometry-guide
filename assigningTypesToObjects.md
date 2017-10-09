@@ -31,7 +31,7 @@ Get all objects of the given type:
 var typeObjects = viewer.getObjects("ifcCurtainWall");
 ```
 
-Making all objects transparent except for the given types (see [Making objects transparent](makingObjectsTransparent.md)):
+Making all objects transparent except for the given types (see [Making Objects Transparent](makingObjectsTransparent.md)):
 ```javascript
 viewer.setOpacity(0.4);
 viewer.setOpacity(["IfcFlowController", "IfcFlowFitting"], 1.0);

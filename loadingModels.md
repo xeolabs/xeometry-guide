@@ -1,4 +1,4 @@
-# Loading models
+# Loading Models
 
 You can load multiple glTF 2.0 models into a viewer at the same time, as well as multiple copies of the same model.
 

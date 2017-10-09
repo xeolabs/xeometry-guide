@@ -1,4 +1,4 @@
-# Creating a viewer
+# Creating a Viewer
 
 Your first step is to link to the xeometry [library](http://xeolabs.com/xeometry/build/xeometry.min.js):
 ````html

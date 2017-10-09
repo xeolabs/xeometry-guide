@@ -1,4 +1,4 @@
-## Transforming models and objects
+## Transforming Models and Objects
 
 You can independently transform each model and object in your viewer.
 

@@ -7,8 +7,8 @@
 
 ## Getting started
 
-* [Creating a viewer](creatingAViewer.md)
-* [Loading models](loadingModels.md)
+* [Creating a Viewer](creatingAViewer.md)
+* [Loading Models](loadingModels.md)
 * [Assigning types to objects](assigningTypesToObjects.md)
 
 ## Querying content
@@ -29,9 +29,9 @@
 
 ## Customizing the view
 
-* [Showing and hiding objects](showingAndHidingObjects.md)
-* [Making objects transparent](makingObjectsTransparent.md)
-* [Transforming models and objects](transformingModelsAndObjects.md)
+* [Showing and Hiding Objects](showingAndHidingObjects.md)
+* [Making Objects Transparent](makingObjectsTransparent.md)
+* [Transforming Models and Objects](transformingModelsAndObjects.md)
 * [Outlining objects](outlingObjects.md)
 * [Clipping](clipping.md)
 * [Annotations](annotations.md)
