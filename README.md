@@ -33,15 +33,15 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 
 Some of the things you can do through the viewer API are:
 
-* *show and hide objects* - (see [Viewer bookmarks](viewerBookmarks.md)),
-* *transform models and objects* - (see [Transforming models and objects](transformingModelsAndObjects.md)),
-* *set object opacities* - (see [Making objects transparent](makingObjectsTransparent.md)),
-* *create annotations* - (see [Creating annotations](creatingAnnotations.md)),
-* *create outlines around objects* - ,
-* *create arbitrary clipping planes* -,
-* *query boundaries* -,
-* *fit objects in view* - ,
-* *pick and raycast objects* - .
+* show and hide objects - (see [Viewer bookmarks](viewerBookmarks.md)),
+* transform models and objects - (see [Transforming models and objects](transformingModelsAndObjects.md)),
+* control object opacities - (see [Making objects transparent](makingObjectsTransparent.md)),
+* create annotations - (see [Creating annotations](creatingAnnotations.md)),
+* create outlines around objects - ,
+* create arbitrary clipping planes -,
+* query boundaries -,
+* fit objects in view - ,
+* pick and raycast objects - .
 
 Once you've loaded models and tweaked everything to make it look nice, you can dump the whole viewer state to
 a JSON bookmark. You can then load that bookmark, perhaps into a different viewer instance, to exactly restore
