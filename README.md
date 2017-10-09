@@ -17,7 +17,7 @@ making the handle objects transparent to reveal the inner workings, then positio
 
 [![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
-```javascript
+````javascript
 var viewer = new xeometry.Viewer();
 
 viewer.setEye([-145.22, -32.97, 282.5]);
@@ -28,7 +28,7 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
     viewer.setRotate("saw", [90, 0, 0]);
     viewer.setOpacity(["saw#1", "saw#1.28", "saw#1.1"], 0.3);
 });
-```
+````
 
 If we then save our viewer to a bookmark:
 
@@ -38,7 +38,7 @@ var bookmark = viewer.getBookmark();
 
 the bookmark will look this:
 
-````json
+````JSON
 {
 	"models": [
 		{
@@ -85,23 +85,23 @@ Some of the things you can do with objects are:
 
 xeometry tracks all your updates, and is able to serialize a viewer's state as a JSON bookmark:
 
-```javascript
+````javascript
 var bookmark = viewer.getBookmark();
-```
+````
 
 A bookmark contains a complete snapshot of the viewer's state, including what models are loaded, object properties,
 camera position etc - everything you've done through the viewer API. We can restore a viewer to a bookmark at any time:
 
-```javascript
+````javascript
 viewer.setBookmark(bookmark);
-```
+````
 
 We can also initialize another viewer from a bookmark:
 
-```javascript
+````javascript
 var viewer2 = new xeometry.Viewer({ canvasId: "anotherCanvas" });
 viewer2.setBookmark(bookmark);
-```
+````
 
 
 
