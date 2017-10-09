@@ -31,28 +31,27 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ````
 
-Some of the things you can do through the viewer API are:
+Some things you can do through the xeometry API:
 
-* show and hide objects - (see [Viewer bookmarks](viewerBookmarks.md)),
-* transform models and objects - (see [Transforming models and objects](transformingModelsAndObjects.md)),
-* control object opacities - (see [Making objects transparent](makingObjectsTransparent.md)),
-* create annotations - (see [Creating annotations](creatingAnnotations.md)),
-* create outlines around objects - ,
-* create arbitrary clipping planes -,
-* query boundaries -,
-* fit objects in view - ,
-* pick and raycast objects - .
+* create multiple viewers in a page - see: [Creating a viewer](creatingAViewer.md)
+* load multiple 3D glTF 2.0 models into a viewer - see: [Loading models](loadingModels.md)
+* show and hide objects - see: [Showing and hiding objects](showingAndHidingObjects.md)
+* make objects transparent - see: [Making objects transparent](makingObjectsTransparent.md)
+* translate, rotate and scale objects - see: [Transforming models and objects](transformingModelsAndObjects.md)
+* animate the camera - see: [Controlling the camera](controllingTheCamera.md), [Panning the camera](panningTheCamera.md), [Rotating the camera](rotatingTheCamera.md) and [Zooming the camera](zoomingTheCamera.md)
+* move camera to fit objects in view - see: [Fitting things in view](fittingThingsInView.md)
+* create annotations - see: [Creating annotations](creatingAnnotations.md)
+* create custom clip planes - see: [Creating clip planes](creatingClipPlanes.md)
+* create light sources - see: [Creating light sources](creatingLightSources.md)
+* draw outlines around objects to emphasise them - see: [Outlining objects](outliningObjects.md)
+* save and load JSON bookmarks of viewer state - see: [Viewer bookmarks](viewerBookmarks.md)
+* dynamically query boundaries of models and objects - see: [Querying boundaries](queryingBoundaries.md)
+* dynamically query geometry of objects - see: [Querying object geometries](queryingObjectGeomatries.md)
+* pick objects with canvas coordinates or 3D ray - see: [Picking objects](picking.md)
+* take canvas snaphots - see: [Canvas snapshots](canvasSnapshots.md)
+* assign types (eg. IFC) to objects, so that types can be used instead of IDs when when specifying objects to viewer methods - see: [Assigning types to objects](assigningTypesToObjects.md)
 
-Once you've loaded models and tweaked everything to make it look nice, you can dump the whole viewer state to
-a JSON bookmark. You can then load that bookmark, perhaps into a different viewer instance, to exactly restore
-that view (see [Viewer bookmarks](viewerBookmarks.md)).
-
-````javascript
-var bookmark = viewer.getBookmark();
-
-var viewer2 = new xeometry.Viewer();
-viewer2.setBookmark(bookmark, function() { /* Loaded */ });
-````
+There are bound to be some things the API doesn't do for you. If those are within the scope of viewing and manipulating glTF content, then please [log the issue](TODO) for discussion.
 
 
 
