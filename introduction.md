@@ -8,8 +8,8 @@ Once you've loaded models, arranged the camera, tweaked objects and so forth, yo
 a JSON bookmark object. You can then load that bookmark, perhaps into a different viewer instance, to exactly restore
 that view.
 
-The example below shows the idea. In this example, we're positioning the camera, loading a glTF model of a reciprocating saw,
-making some objects transparent to reveal the inner workings, then positioning the camera to fit everything in view.
+The example below shows the idea. In this example, we're positioning the camera, loading a glTF model (a reciprocating saw),
+making the handle objects transparent to reveal the inner workings, then positioning the camera to fit everything in view.
 
 [![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 

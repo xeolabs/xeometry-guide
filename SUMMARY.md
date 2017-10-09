@@ -3,7 +3,6 @@
 ## xeometry
 
 * [Cover](README.md)
-* [Introduction](introduction.md)
 
 ## Getting started
 
