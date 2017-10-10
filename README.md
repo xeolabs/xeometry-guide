@@ -1,17 +1,13 @@
 # Introduction
 
-xeometry is an open source JavaScript API from [@xeographics](https://www.gitbook.com/book/xeolabs/xeometry/edit#) for
+[xeometry](http://xeolabs.com/xeometry) is an open source JavaScript API from [@xeographics](https://www.gitbook.com/book/xeolabs/xeometry/edit#) for
 viewing glTF models on WebGL.
 
-> * [Website](http://xeolabs.com/xeometry)
-
-A xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) is a single class that wraps the WebGL-based [xeogl](http://xeogl.org)
+A xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) is a single class that wraps the [xeogl](http://xeogl.org)
 3D engine in a set of simple data-driven methods that focus on loading glTF models and manipulating scene elements to create cool 3D presentations.
 
 The example below shows the general idea. In this example, we're positioning the camera, loading a model of a reciprocating saw,
 rotating the model so we can see it from the side, then making the handle objects transparent, to reveal the inner workings.
-
-[![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
 ````javascript
 var viewer = new xeometry.Viewer();
@@ -25,16 +21,19 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
     viewer.setOpacity(["saw#1", "saw#1.28", "saw#1.1"], 0.3);
 });
 ````
+[![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
-Once you've loaded our model and tweaked everything to our heart's content, we can save the viewer state to
+Once we've tweaked everything to our heart's content, we can save the viewer to
 a JSON bookmark.
+
+````javascript
+var bookmark = viewer.getBookmark();
+````
 
 We can then load that bookmark again, perhaps even into a different viewer instance, to exactly restore
 that view (see [Viewer Bookmarks](viewerBookmarks.md)).
 
 ````javascript
-var bookmark = viewer.getBookmark();
-
 var viewer2 = new xeometry.Viewer();
 viewer2.setBookmark(bookmark, function() { /* Loaded */ });
 ````
