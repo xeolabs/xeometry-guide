@@ -34,5 +34,5 @@ var viewer2 = new xeometry.Viewer();
 viewer2.setBookmark(bookmark, function() { /* Loaded */ });
 ```
 
-See [Features](/features.md) for an overview of the things that you can do through the xeometry API.
+See [Features](/features.md) for an overview of all the things that you can do through the xeometry API.
 
