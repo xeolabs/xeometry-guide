@@ -1,20 +1,15 @@
-# Web-based model visualization with xeometry
+# Introduction
 
 xeometry is an open source JavaScript API from [@xeographics](https://www.gitbook.com/book/xeolabs/xeometry/edit#) for
 viewing glTF models on WebGL.
 
 > * [Website](http://xeolabs.com/xeometry)
-> * [Examples](http://xeolabs.com/xeometry/examples)
-> * [API Docs](http://xeolabs.com/xeometry/docs/)
-> * [GitHub](https://github.com/xeolabs/xeometry)
-
-## The Gist
 
 A xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) is a single class that wraps the WebGL-based [xeogl](http://xeogl.org)
 3D engine in a set of simple data-driven methods that focus on loading glTF models and manipulating scene elements to create cool 3D presentations.
 
 The example below shows the general idea. In this example, we're positioning the camera, loading a model of a reciprocating saw,
-rotating the model so we can see it from the side, then making the handle objects transparent to reveal the inner workings.
+rotating the model so we can see it from the side, then making the handle objects transparent, to reveal the inner workings.
 
 [![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
@@ -31,10 +26,11 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ````
 
+Once you've loaded our model and tweaked everything to our heart's content, we can save the viewer state to
+a JSON bookmark.
 
-Once you've loaded your models and tweaked everything to make them look nice, you can dump the whole viewer state to
-a JSON bookmark. You can then load that bookmark again, perhaps into a different viewer instance, to exactly restore
-that view (see [Viewer bookmarks](viewerBookmarks.md)).
+We can then load that bookmark again, perhaps even into a different viewer instance, to exactly restore
+that view (see [Viewer Bookmarks](viewerBookmarks.md)).
 
 ````javascript
 var bookmark = viewer.getBookmark();

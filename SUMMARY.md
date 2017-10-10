@@ -38,7 +38,7 @@
 
 ## Saving the view
 
-* [Viewer bookmarks](viewerBookmarks.md)
+* [Viewer Bookmarks](viewerBookmarks.md)
 * [Canvas snapshots](canvasSnapshots.md)
 
 ## Picking

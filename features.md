@@ -18,7 +18,7 @@ Things you can do through the xeometry API:
 * Query 3D geometry of objects - see: [Querying object geometries](queryingObjectGeomatries.md)
 * Pick objects with canvas coordinates or 3D ray - see: [Picking objects](picking.md)
 * Take canvas snaphots - see: [Canvas snapshots](canvasSnapshots.md)
-* Save and load JSON bookmarks of viewer state - see: [Viewer bookmarks](viewerBookmarks.md)
+* Save and load JSON bookmarks of viewer state - see: [Viewer Bookmarks](viewerBookmarks.md)
 
 There are bound to be some things the API doesn't do for your app. If your requirements are within the scope of viewing and manipulating glTF content, then please [log the issue](TODO) for discussion.
 

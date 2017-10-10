@@ -1,4 +1,4 @@
-# Viewer bookmarks
+# Viewer Bookmarks
 
 You can save the state of your viewer to a JSON bookmark, which captures the complete runtime state of your viewer. When you
 load the bookmark again (perhaps even into a different viewer), it will exactly restore the viewer to that state.
@@ -14,7 +14,7 @@ The bookmark will save everything, including:
 
 ### Example
 
-To see how bookmarking works, we'll reuse the example from *[Introduction](introduction.md)* below. In this example, we're
+To show how bookmarking works, we'll reuse the example from *[Introduction](introduction.md)*. In this example, we're
 positioning the camera, loading a model, rotating the model, and making some objects transparent, to reveal the insides.
 
 [![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
@@ -74,7 +74,7 @@ Our bookmark will look this:
 }
 ````
 
-For compactness, a bookmark only saves viewer state that differs from the defaults. Therefore, our bookmark only saved
+For compactness, a bookmark only saves viewer state that differs from the defaults. Therefore, our bookmark only contains
 the updates that we programmed, such as the camera position, the model we loaded, its rotation, and the two objects that
 we made transparent.
 
