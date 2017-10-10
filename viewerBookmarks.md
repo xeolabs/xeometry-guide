@@ -1,19 +1,21 @@
 # Viewer bookmarks
 
-You can save and load complete snapshots of viewer state as JSON bookmarks. A bookmark contains all the viewer's state, including:
+You can save the state of your viewer to a JSON bookmark, which captures the complete runtime state of your viewer. When you
+load the bookmark again (perhaps even into a different viewer), it will exactly restore the viewer to that state.
+
+The bookmark will save everything, including:
 
 * models loaded,
 * object visibilities, opacities, outlines and types
 * model and object transforms
 * camera position and projection
-* annotations
-* clipping planes
-* light sources
-* outline appearance
+* annotations, clipping planes, light sources
+* etc.
 
 ### Example
 
-In the example below, we're creating a viewer, positioning the camera, loading a glTF model of a reciprocating saw, then hiding some objects, to reveal the inner workings.
+To see how bookmarking works, we'll reuse the example from *[Introduction](introduction.md))*, in which we position the
+camera, load a model, rotate the model, and make some objects transparent to reveal inner objects.
 
 [![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
@@ -30,13 +32,14 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ````
 
-If we then save our viewer to a bookmark:
+With our model loaded and everything looking good, we'll save our viewer to a bookmark:
+
 
 ````javascript
 var bookmark = viewer.getBookmark();
 ````
 
-the bookmark will look this:
+Our bookmark will look this:
 
 ````JSON
 {
@@ -69,11 +72,12 @@ the bookmark will look this:
 }
 ````
 
-For compactness, a bookmark only saves state that differs from the defaults. Therefore, our bookmark only saved the
-updates that we programmed, such as the camera position, the model we loaded, its rotation, and the two hidden objects.
+For compactness, a bookmark only saves viewer state that differs from the defaults. Therefore, our bookmark only saved
+the updates that we programmed, such as the camera position, the model we loaded, its rotation, and the two hidden
+objects.
 
-We can now load the bookmark back into our viewer, or into a different viewer, to restore the scene that we
-created programmatically earlier.
+We can now load the bookmark back into our viewer, or into a different viewer, to restore the scene that we created
+programmatically earlier:
 
 ```javascript
 viewer.setBookmark(bookmark, function() { /* Loaded */ });
