@@ -14,8 +14,8 @@ The bookmark will save everything, including:
 
 ### Example
 
-To see how bookmarking works, we'll reuse the example from *[Introduction](introduction.md))*, in which we position the
-camera, load a model, rotate the model, and make some objects transparent to reveal inner objects.
+To see how bookmarking works, we'll reuse the example from *[Introduction](introduction.md)* below. In this example, we're
+positioning the camera, loading a model, rotating the model, and making some objects transparent, to reveal the insides.
 
 [![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
@@ -32,7 +32,9 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ````
 
-With our model loaded and everything looking good, we'll save our viewer to a bookmark:
+#### Saving a bookmark
+
+With our model loaded and everything looking awesome, we'll now save our viewer to a bookmark:
 
 
 ````javascript
@@ -73,8 +75,10 @@ Our bookmark will look this:
 ````
 
 For compactness, a bookmark only saves viewer state that differs from the defaults. Therefore, our bookmark only saved
-the updates that we programmed, such as the camera position, the model we loaded, its rotation, and the two hidden
-objects.
+the updates that we programmed, such as the camera position, the model we loaded, its rotation, and the two objects that
+we made transparent.
+
+#### Loading a bookmark
 
 We can now load the bookmark back into our viewer, or into a different viewer, to restore the scene that we created
 programmatically earlier:
@@ -86,3 +90,4 @@ var viewer2 = new xeometry.Viewer();
 viewer2.setBookmark(bookmark, function() { /* Loaded */ });
 ```
 
+Note that when loading a bookmark, the viewer must be able to load the models that are listed in the bookmark.
