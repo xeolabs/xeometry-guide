@@ -4,7 +4,7 @@ You can dynamically query the boundaries of models and objects in your viewer.
 
 A boundary is an axis-aligned bounding box \(_AABB_\) in World-space, given as an array of values `[xmin, ymin, zmin, xmax, ymax, zmax]`.
 
-Transforming a model or object will update its boundary.
+Note that transforming a model or object will change its boundary extents (see [Transforming Models and Objects](transformingModelsAndObjects.md)).
 
 ### Examples
 
