@@ -6,7 +6,7 @@ When you have assigned types to your objects, then you can specify types as the 
 
 ### Examples
 
-Assign types to two objects:
+Assign IFC types to two objects:
 
 ```javascript
 viewer.setType("house#12", "IfcFlowController");
@@ -25,7 +25,7 @@ Get all types in the viewer:
 var types = viewer.getTypes();
 ```
 
-Get all objects of the given type:
+Get all objects of the given type (see [Querying Models and Objects](queryingModelsAndObjects.md)):
 
 ```javascript
 var typeObjects = viewer.getObjects("ifcCurtainWall");

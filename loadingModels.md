@@ -2,11 +2,14 @@
 
 You can load multiple glTF 2.0 models into a viewer at the same time, as well as multiple copies of the same model.
 
-xeometry loads only geometries, materials and modeling transform hierarchies from glTF, without animations.
+xeometry only loads geometries, materials and transforms from glTF, without animations, cameras or lights.
 
-In addition to glTF's core metallic material workflow, xeometry also supports specular and common materials.
+When you load a model, you assign it a  unique ID so that you can find it within the viewer. That ID will get
+prefixed to the IDs of the model's objects. This allows two or more copies of the same model to be loaded at the
+same time, without ID clashes between their objects.
 
-It does not  load cameras or lights because the viewer manages those globally, for all the models you load.
+See *[Querying Models and Objects](queryingModelsAndObjects.md)* for info on querying IDs of objects within
+your loaded models.
 
 ### Examples
 
@@ -34,7 +37,21 @@ viewer.loadModel("saw2", "./Reciprocating_Saw.gltf",  function () {
 });
 ```
 
-\`Unloading a model:
+Fly camera to fit one of our models in view (see *[Fitting things in view](fittingThingsInView.md)*):
+
+```javascript
+viewer.viewFit("gearbox", function() {
+    // Camera arrived
+});
+```
+
+Get IDs of all models currently loaded (see *[Querying Models and Objects](queryingModelsAndObjects.md)*):
+
+```javascript
+var models = viewer.getModels();
+```
+
+Unloading a model:
 
 ```javascript
 viewer.unloadModel("gearbox");
