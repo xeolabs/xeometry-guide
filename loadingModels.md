@@ -2,14 +2,16 @@
 
 You can load multiple glTF 2.0 models into a viewer at the same time, as well as multiple copies of the same model.
 
+#### Supported glTF features
+
 xeometry only loads geometries, materials and transforms from glTF, without animations, cameras or lights.
+
+#### Model and object IDs
 
 When you load a model, you assign it a  unique ID so that you can find it within the viewer. That ID will get
 prefixed to the IDs of the model's objects. This allows two or more copies of the same model to be loaded at the
-same time, without ID clashes between their objects.
-
-See *[Querying Models and Objects](queryingModelsAndObjects.md)* for info on querying IDs of objects within
-your loaded models.
+same time, without ID clashes between their objects. See *[Querying Models and Objects](queryingModelsAndObjects.md)*
+for querying the IDs of the objects within your loaded models.
 
 ### Examples
 
@@ -37,7 +39,7 @@ viewer.loadModel("saw2", "./Reciprocating_Saw.gltf",  function () {
 });
 ```
 
-Fly camera to fit one of our models in view (see *[Fitting things in view](fittingThingsInView.md)*):
+Fly the camera to look at one of our models (see *[Fitting things in view](fittingThingsInView.md)*):
 
 ```javascript
 viewer.viewFit("gearbox", function() {
@@ -49,6 +51,18 @@ Get IDs of all models currently loaded (see *[Querying Models and Objects](query
 
 ```javascript
 var models = viewer.getModels();
+```
+
+Get IDs of objects in one of our models (see *[Querying Models and Objects](queryingModelsAndObjects.md)*):
+
+```javascript
+var saw = viewer.getObjects("gearbox");
+```
+
+Get World-space boundary of one of our models (see *[Querying Boundaries](queryingBoundaries.md)*):
+
+```javascript
+var saw = viewer.getObjects("gearbox");
 ```
 
 Unloading a model:
