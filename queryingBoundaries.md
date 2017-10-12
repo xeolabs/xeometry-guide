@@ -4,7 +4,7 @@ You can dynamically query the boundaries of models and objects in your viewer.
 
 A boundary is an axis-aligned bounding box \(_AABB_\) in World-space, given as an array of values `[xmin, ymin, zmin, xmax, ymax, zmax]`.
 
-Note that transforming a model or object will change its boundary extents (see [Transforming Models and Objects](transformingModelsAndObjects.md)).
+Note that transforming a model or object will change its boundary extents (see *[Transforming Models and Objects](transformingModelsAndObjects.md)*).
 
 ### Examples
 
@@ -26,7 +26,7 @@ Get collective boundary of two objects:
 var objectsBoundary = viewer.getAABB(["saw34", "saw5"]);
 ```
 
-Get collective boundary of all objects of the given types (see [Assigning types to objects](assigningTypesToObjects.md)):
+Get collective boundary of all objects of the given types (see *[Assigning types to objects](assigningTypesToObjects.md)*):
 
 ```javascript
 var objectsBoundary = viewer.getAABB(["IfcFlowController", "IfcFlowFitting"]);

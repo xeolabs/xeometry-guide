@@ -34,7 +34,7 @@ Show given objects:
 viewer.show(["saw#1", "saw#5"]);
 ```
 
-Show all objects of the given types (see [Assigning types to objects](assigningTypesToObjects.md)):
+Show all objects of the given types (see *[Assigning types to objects](assigningTypesToObjects.md)*):
 
 ```javascript
 viewer.show(["IfcFlowController", "IfcFlowFitting"]);

@@ -56,7 +56,7 @@ viewer.viewFit(["saw", "gearbox"], function() {
 });
 ```
 
-Fly camera to fit all objects of the given types (see [Assigning types to objects](assigningTypesToObjects.md)):
+Fly camera to fit all objects of the given types (see *[Assigning types to objects](assigningTypesToObjects.md)*):
 
 ```javascript
 viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {

@@ -25,19 +25,19 @@ Get all types in the viewer:
 var types = viewer.getTypes();
 ```
 
-Get all objects of the given type (see [Querying Models and Objects](queryingModelsAndObjects.md)):
+Get all objects of the given type (see *[Querying Models and Objects](queryingModelsAndObjects.md)*):
 
 ```javascript
 var typeObjects = viewer.getObjects("ifcCurtainWall");
 ```
 
-Making all objects transparent except for the given types (see [Making Objects Transparent](makingObjectsTransparent.md)):
+Making all objects transparent except for the given types (see *[Making Objects Transparent](makingObjectsTransparent.md)*):
 ```javascript
 viewer.setOpacity(0.4);
 viewer.setOpacity(["IfcFlowController", "IfcFlowFitting"], 1.0);
 ```
 
-Fly camera to fit all objects of the given types (see [Fitting things in view](fittingThingsInView.md)):
+Fly camera to fit all objects of the given types (see *[Fitting things in view](fittingThingsInView.md)*):
 
 ```javascript
 viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
@@ -45,7 +45,7 @@ viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
 });
 ```
 
-Get collective boundary of all objects of the given types  (see: [Querying boundaries](queryingBoundaries.md)):
+Get collective boundary of all objects of the given types  (see: *[Querying boundaries](queryingBoundaries.md)*):
 
 ```javascript
 var objectsBoundary = viewer.getAABB(["IfcFlowController", "IfcFlowFitting"]);
