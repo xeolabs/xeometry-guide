@@ -43,7 +43,7 @@
 
 ## Picking
 
-* [Picking objects](pickingObjects.md)
+* [Picking Objects](pickingObjects.md)
 
 ## Appendix
 
