@@ -21,14 +21,12 @@ Note that we'll only get a normal if the object's geometry has normals, and UV c
 geometry has UVs. xeometry finds the values for these by interpolating within the values for the triangle vertices using
 the barycentric coordinates.
 
-## Pick object at canvas coordinates
+## Picking an object at canvas coordinates
 
 This type of picking is the simplest: we pick the closest object behind the given canvas coordinates. This is equivalent to
 firing a ray through the canvas, down the negative Z-axis, to find the first object it hits.
 
-### Examples
-
-Draw outline around each clicked object (see [Outlining Objects](outliningObjects.md)):
+**Example:** Draw outline around each clicked object (see [Outlining Objects](outliningObjects.md)):
 
 ````javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -40,7 +38,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 });
 ````
 
-Hide each clicked object (see [Showing and Hiding Objects](showingAndHidingObjects.md)):
+**Example:** Hide each clicked object (see [Showing and Hiding Objects](showingAndHidingObjects.md)):
 
 ````javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -52,7 +50,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 });
 ````
 
-Fit camera view to each clicked object (see [Fitting Things in View](fittingThingsInView.md)):
+**Example:** Fit camera view to each clicked object (see [Fitting Things in View](fittingThingsInView.md)):
 
 ````javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -64,14 +62,12 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 });
 ````
 
-## Pick point on object surface at canvas coords
+## Picking point on object surface at canvas coords
 
 Like the previous type of picking, this one also picks the closest object behind the given canvas coordinates, but also
 gets geometric information about the point on the object's surface that lies right behind those canvas coordinates.
 
-### Example
-
-Annotate an object by clicking it (see [Creating Annotations](creatingAnnotations.md)):
+**Example:** Annotate an object by clicking it (see [Creating Annotations](creatingAnnotations.md)):
 
 ````javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -95,13 +91,11 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 });
 ````
 
-## Pick object with World-space ray
+## Picking object with World-space ray
 
 For this type of picking, xeometry fires a ray through the scene, in World-space, to pick the first entity it hits.
 
-### Example
-
-Fire a ray through World space to outline the first object that intersects it (see [Outlining Objects](outliningObjects.md)):
+**Example:** Fire a ray through World space to outline the first object that intersects it (see [Outlining Objects](outliningObjects.md)):
 
 ```javascript
 var hit = viewer.rayCastObject([0,0,-100], [0,0,1]); // Origin, dir
@@ -111,14 +105,12 @@ if (hit) {
 }
 ```
 
-## Pick point on entity surface with World-space ray
+## Pick point on object surface with World-space ray
 
-Like the previous type of picking, this one also involves firing a ray through the scene in World-space, to pick an entity,
+Like the previous type of picking, this one also involves firing a ray through the scene in World-space, to pick an object,
 but this time we're also getting geometric information about the intersection of the ray with the entity surface.
 
-### Example
-
-Getting object and surface intersection with a World-space ray:
+**Example:** Getting object and surface intersection with a World-space ray:
 
 ```javascript
 hit = viewer.rayCastSurface([0,0,-100], [0,0,1]); // Origin, dir
