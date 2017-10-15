@@ -1,5 +1,7 @@
 # Picking objects
 
+![](assets/pickingObjects.png)
+
 xeometry supports four types of picking:
 
  1. pick object at canvas coordinates,
