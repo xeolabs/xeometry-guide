@@ -5,13 +5,13 @@ You can emphasize objects in your viewer by displaying outlines around them.
 ````javascript
 var viewer = new xeometry.Viewer();
 
+viewer.setEye([-130, -40, 350]);
+viewer.setLook([-130, -40, 0]);
+
+viewer.setOutlineColor([1, 1, 0]);
+viewer.setOutlineThickness(8);
+
 viewer.loadModel("gearbox", "GearboxAssy.gltf", function () {
-
-    viewer.viewFit();
-
-    viewer.setOutlineColor([1, 1, 0]);
-    viewer.setOutlineThickness(8);
-
     viewer.showOutline([
         "gearbox#1", "gearbox#1.0", "gearbox#1.1", "gearbox#1.2" // ...
     ]);

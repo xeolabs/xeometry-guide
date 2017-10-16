@@ -5,13 +5,12 @@ You can make objects transparent, to reveal other objects behind or inside them.
 ````javascript
 var viewer = new xeometry.Viewer();
 
-viewer.setEye([-145.22, -32.97, 282.5]);
-viewer.setLook([-147.68, -20.64, 0]);
-viewer.setUp([0, 1, 0]);
+viewer.setEye([-130, -40, 350]);
+viewer.setLook([-130, -40, 0]);
 
 viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
     viewer.setRotate("saw", [90, 0, 0]);
-    viewer.setOpacity(["saw#1", "saw#1.28", "saw#1.1"], 0.3);
+    viewer.setOpacity(["saw#3.1", "saw#3.2"], 0.5);
 });
 ````
 
