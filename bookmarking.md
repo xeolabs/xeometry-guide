@@ -1,4 +1,4 @@
-# Bookmarks
+# Bookmarking
 
 You can save the state of your viewer to a JSON bookmark, which captures the complete runtime state of your viewer. When you
 load the bookmark again (perhaps even into a different viewer), it will exactly restore the viewer to that state.

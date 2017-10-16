@@ -27,7 +27,7 @@ Once we've tweaked everything to our heart's content, we can save the viewer to 
 var bookmark = viewer.getBookmark();
 ```
 
-We can then load that bookmark again, perhaps even into a different viewer instance, to exactly restore that view \(see [_Bookmarks_](bookmarks.md) for more info\).
+We can then load that bookmark again, perhaps even into a different viewer instance, to exactly restore that view \(see [_Bookmarking_](bookmarking.md) for more info\).
 
 ```javascript
 var viewer2 = new xeometry.Viewer();

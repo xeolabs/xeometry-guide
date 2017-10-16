@@ -11,13 +11,13 @@
 * [Loading Models](loadingModels.md)
 * [Assigning types to objects](assigningTypesToObjects.md)
 
-## Querying content
+## Querying
 
 * [Querying models and objects](queryingModelsAndObjects.md)
 * [Querying boundaries](queryingBoundaries.md)
 * [Querying geometry](queryingObjectGeometries.md)
 
-## Camera control
+## Camera
 
 * [Controlling the camera](controllingTheCamera.md)
 * [Fitting things in view](fittingThingsInView.md)
@@ -27,23 +27,26 @@
 * [Camera projections](cameraProjections.md)
 * [CameraControl helper](cameraControlHelper.md)
 
-## Customizing the view
+## Effects
 
 * [Visibility](visibility.md)
 * [Transparency](transparency.md)
 * [Transforming](transforming.md)
-* [Outlining](outlingObjects.md)
+* [Outlining](outling.md)
 * [Clipping](clipping.md)
 * [Annotations](annotations.md)
-
-## Saving the view
-
-* [Bookmarks](bookmarks.md)
-* [Canvas snapshots](canvasSnapshots.md)
 
 ## Picking
 
 * [Picking](picking.md)
+
+## Bookmarking
+
+* [Bookmarking](bookmarking.md)
+
+## Tools
+
+* [Canvas snapshots](canvasSnapshots.md)
 
 ## Appendix
 
