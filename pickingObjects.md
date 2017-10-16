@@ -28,7 +28,7 @@ the barycentric coordinates.
 This type of picking is the simplest: we pick the closest object behind the given canvas coordinates. This is equivalent to
 firing a ray through the canvas, down the negative Z-axis, to find the first object it hits.
 
-**Example:** Draw outline around each clicked object (see [Outlining Objects](outliningObjects.md)):
+**Example:** Draw outline around each clicked object (see [Outlining Objects](outlining.md)):
 
 ````javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -97,7 +97,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 
 For this type of picking, xeometry fires a ray through the scene, in World-space, to pick the first entity it hits.
 
-**Example:** Fire a ray through World space to outline the first object that intersects it (see [Outlining Objects](outliningObjects.md)):
+**Example:** Fire a ray through World space to outline the first object that intersects it (see [Outlining Objects](outlining.md)):
 
 ```javascript
 var hit = viewer.rayCastObject([0,0,-100], [0,0,1]); // Origin, dir

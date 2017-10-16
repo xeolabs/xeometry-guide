@@ -1,4 +1,4 @@
-# Outlining objects
+# Outlining
 
 You can emphasize objects in your viewer by displaying outlines around them.
 
