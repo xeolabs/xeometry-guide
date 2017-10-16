@@ -1,4 +1,4 @@
-# Controlling the camera
+# Controlling the Camera
 
 A viewer has a single camera that can be moved in orbit or first-person mode, directed to fit target elements in view, and switched between perspective and orthographic projections.
 

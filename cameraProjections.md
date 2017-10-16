@@ -1,4 +1,4 @@
-# Camera projection
+# Camera Projections
 
 You can switch the camera between perspective and orthographic projection at any time.
 

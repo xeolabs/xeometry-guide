@@ -1,4 +1,4 @@
-# Querying models and objects
+# Querying Models and Objects
 
 You can query the models and objects that are currently loaded in your viewer.
 

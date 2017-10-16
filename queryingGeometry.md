@@ -1,4 +1,4 @@
-# Querying geometry
+# Querying Geometry
 
 You can query the geometry of each of the objects in your viewer. This is useful when you want to implement application
 logic for things like collision detection etc.

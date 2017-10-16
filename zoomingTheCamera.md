@@ -1,4 +1,4 @@
-# Zooming the camera
+# Zooming the Camera
 
 You can zoom the camera incrementally, which changes the distance of `eye` from `look`.
 

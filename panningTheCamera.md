@@ -1,4 +1,4 @@
-# Panning the camera
+# Panning the Camera
 
 You can pan the camera incrementally along its local axis.
 

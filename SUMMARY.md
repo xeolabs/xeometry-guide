@@ -9,23 +9,23 @@
 
 * [Creating a Viewer](creatingAViewer.md)
 * [Loading Models](loadingModels.md)
-* [Assigning types to objects](assigningTypesToObjects.md)
+* [Assigning Types to Objects](assigningTypesToObjects.md)
 
 ## Querying
 
-* [Querying models and objects](queryingModelsAndObjects.md)
+* [Querying Models and Objects](queryingModelsAndObjects.md)
 * [Querying Boundaries](queryingBoundaries.md)
-* [Querying geometry](queryingGeometry.md)
+* [Querying Geometry](queryingGeometry.md)
 
 ## Camera
 
-* [Controlling the camera](controllingTheCamera.md)
-* [Fitting things in view](fittingThingsInView.md)
-* [Panning the camera](panningTheCamera.md)
-* [Rotating the camera](rotatingTheCamera.md)
-* [Zooming the camera](zoomingTheCamera.md)
-* [Camera projections](cameraProjections.md)
-* [CameraControl helper](cameraControlHelper.md)
+* [Controlling the Camera](controllingTheCamera.md)
+* [Fitting Things in View](fittingThingsInView.md)
+* [Panning the Camera](panningTheCamera.md)
+* [Rotating the Camera](rotatingTheCamera.md)
+* [Zooming the Camera](zoomingTheCamera.md)
+* [Camera Projections](cameraProjections.md)
+* [CameraControl Helper](cameraControlHelper.md)
 
 ## Effects
 
@@ -46,7 +46,7 @@
 
 ## Tools
 
-* [Canvas snapshots](canvasSnapshots.md)
+* [Canvas Snapshots](canvasSnapshots.md)
 
 ## Appendix
 

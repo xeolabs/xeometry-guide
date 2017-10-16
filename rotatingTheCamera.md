@@ -1,4 +1,4 @@
-# Rotating the camera
+# Rotating the Camera
 
 You can rotate the camera incrementally, either rotating `eye` about `look` \(orbiting\), or rotating `look` about `eye` \(first-person rotation\).
 

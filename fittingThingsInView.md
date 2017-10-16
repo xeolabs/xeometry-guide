@@ -1,4 +1,4 @@
-# Fitting things in view
+# Fitting Things in View
 
 You can fly or jump the camera to fit given models, objects, types or boundaries in view.
 

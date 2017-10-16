@@ -1,4 +1,4 @@
-# Introduction
+# The xeometry User Guide
 
 A xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) is a single class that wraps [xeogl](http://xeogl.org)
 (a WebGL-based 3D engine) in simple data-driven methods focused on loading glTF models and manipulating their

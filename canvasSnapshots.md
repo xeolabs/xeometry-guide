@@ -1,4 +1,4 @@
-# Canvas snapshots
+# Canvas Snapshots
 
 You can take a snapshot of your viewer, as a JPEG, PNG or BMP image.
 
