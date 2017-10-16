@@ -23,7 +23,7 @@ var viewer = new xeometry.Viewer();
 viewer.setEye([-130, -40, 350]);
 viewer.setLook([-130, -40, 0]);
 
-viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/ReciprocatingSaw.gltf", function () {
+viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
     viewer.setRotate("saw", [90, 0, 0]);
     viewer.setOpacity(["saw#3.1", "saw#3.2"], 0.5);
 });
@@ -53,16 +53,12 @@ Our bookmark will look this:
 	],
 	"objects": [
 		{
-			"id": "saw#1",
-			"opacity": 0.3
+			"id": "saw#3.1",
+			"opacity": 0.5
 		},
 		{
-        	"id": "saw#1.28",
-        	"opacity": 0.3
-       	},
-        {
-        	"id": "saw#1.1",
-        	"opacity": 0.3
+        	"id": "saw#3.2",
+        	"opacity": 0.5
        	}
 	],
 	"lookat": {
