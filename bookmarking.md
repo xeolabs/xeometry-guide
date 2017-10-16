@@ -17,20 +17,19 @@ The bookmark will save everything, including:
 To show how bookmarking works, we'll reuse the example from *[Introduction](introduction.md)*. In this example, we're
 positioning the camera, loading a model, rotating the model, and making some objects transparent, to reveal the insides.
 
-[![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
-
-````javascript
+```javascript
 var viewer = new xeometry.Viewer();
 
-viewer.setEye([-145.22, -32.97, 282.5]);
-viewer.setLook([-147.68, -20.64, 0]);
-viewer.setUp([0, 1, 0]);
+viewer.setEye([-130, -40, 350]);
+viewer.setLook([-130, -40, 0]);
 
-viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
+viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/glTF-MaterialsCommon/ReciprocatingSaw.gltf", function () {
     viewer.setRotate("saw", [90, 0, 0]);
-    viewer.setOpacity(["saw#1", "saw#1.28", "saw#1.1"], 0.3);
+    viewer.setOpacity(["saw#3.1", "saw#3.2"], 0.5);
 });
-````
+```
+
+[![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
 #### Saving a bookmark
 
