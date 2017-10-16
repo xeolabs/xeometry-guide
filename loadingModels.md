@@ -15,6 +15,15 @@ for querying the IDs of the objects within your loaded models.
 
 ### Examples
 
+Loading a model into a viewer:
+
+```javascript
+viewer.loadModel("saw", "./Reciprocating_Saw.gltf", function () {
+    // Loaded
+});
+```
+[![](assets/loadModel.png)](http://xeolabs.com/xeometry/examples/#loading_loadModel)
+
 Loading two separate models into a viewer:
 
 ```javascript
@@ -26,6 +35,7 @@ viewer.loadModel("gearbox", "./GearboxAssy.gltf", function () {
     // Loaded
 });
 ```
+[![](assets/loadTwoModels.png)](http://xeolabs.com/xeometry/examples/#loading_loadTwoModels)
 
 Loading two copies of the same model into a viewer:
 
@@ -38,6 +48,7 @@ viewer.loadModel("saw2", "./Reciprocating_Saw.gltf",  function () {
     // Loaded
 });
 ```
+[![](assets/loadSameModelTwice.png)](http://xeolabs.com/xeometry/examples/#loading_loadSameModelTwice)
 
 Fly the camera to look at one of our models (see *[Fitting things in view](fittingThingsInView.md)*):
 
