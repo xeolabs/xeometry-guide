@@ -5,7 +5,7 @@ Things you can do through the xeometry API:
 * Create multiple viewers in a page - see *[Creating a Viewer](creatingAViewer.md)*
 * Load multiple 3D glTF 2.0 models into a viewer - see *[Loading Models](loadingModels.md)*
 * Query what models and objects are loaded - see *[Querying Models and Objects](queryingModelsAndObjects.md)*
-* Show and hide objects - see *[Showing and Hiding Objects](visibility.md)*
+* Show and hide objects - see *[Visibility](visibility.md)*
 * Make objects transparent - see *[Transparency](transparency.md)*
 * Translate, rotate and scale objects - see *[Transforming](transforming.md)*
 * Assign types (eg. IFC) to objects, so that the types can be used instead of IDs when when specifying objects to viewer methods - see *[Assigning types to objects](assigningTypesToObjects.md)*

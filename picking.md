@@ -40,7 +40,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 });
 ````
 
-**Example:** Hide each clicked object (see [Showing and Hiding Objects](visibility.md)):
+**Example:** Hide each clicked object (see [Visibility](visibility.md)):
 
 ````javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {

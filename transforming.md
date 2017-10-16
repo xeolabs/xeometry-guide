@@ -9,7 +9,7 @@ viewer.setEye([53.06, -198.07, 302.47]);
 viewer.setLook([-110.88, -24.57, 87.87]);
 viewer.setUp([0.38, 0.76, 0.50]);
 
-viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/glTF-MaterialsCommon/ReciprocatingSaw.gltf", function () {
+viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
     viewer.setRotate("saw", [90, 0, 0]);
     viewer.setTranslate("saw#3.1", [0, 80, -50]);
     viewer.setRotate("saw#3.1", [-90, 0, 0]);
