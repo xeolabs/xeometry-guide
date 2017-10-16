@@ -17,7 +17,7 @@ dynamically update its boundary, along with the boundary and geometry vertex pos
 
 ### Example
 
-In the example below, we'll load a glTF model of a reciprocating saw. Then we rotate the saw 90 degrees about its local X axis, so that we see it from the side. Finally, we translate and rotate a cover object to reveal the saw's inner objects.
+In the example below, we'll load a glTF model of a reciprocating saw. Then we rotate the saw 90 degrees about its local X axis, so that we see it from the side. Finally, we translate and rotate a cover object,  away from the saw, to reveal the saw's inner objects.
 
 ```javascript
 var viewer = new xeometry.Viewer();
