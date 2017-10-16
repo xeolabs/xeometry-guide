@@ -22,6 +22,8 @@ viewer.loadModel("gearbox", "GearboxAssy.gltf", function () {
 
 [![](assets/outlining.png)](http://xeolabs.com/xeometry/examples/#guidebook_outlining)
 
+### More examples
+
 Outlining all objects in a given model:
 
 ```javascript
