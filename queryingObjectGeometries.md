@@ -1,6 +1,7 @@
 # Querying geometry
 
-You can query the geometry of each of the objects in your viewer. This is useful when you want to implement application logic for things like collision detection etc.
+You can query the geometry of each of the objects in your viewer. This is useful when you want to implement application
+logic for things like collision detection etc.
 
 Geometry consists of:
 
@@ -9,9 +10,7 @@ Geometry consists of:
 * array of tangent-space vertex normal vectors (Float32Array), and
 * array of indices (Int16Array or Int32Array), which index the vertex arrays to form primitives.
 
-Transforming an object will modify its vertex positions.
-
-Vertex arrays are flat bu
+Note that transforming an object will modify its vertex positions (see *[Transforming Models and Objects](transformingModelsAndObjects.md)*).
 
 ### Examples
 
@@ -24,13 +23,13 @@ var primitive = viewer.getPrimitive("saw#43");
 Possible values for the primitive are: *"points", "lines",
 "line-loop", "line-strip", "triangles", "triangle-strip"* and *"triangle-fan"*.
 
-Get the World-space vertex positions of an object:
+Get an object's World-space vertex positions:
 
 ```javascript
 var positions = viewer.getPositions("saw#43");
 ```
 
-Get the tangent-space vertex normals of an object:
+Get an object's tangent-space vertex normals:
 
 ```javascript
 var normals = viewer.getNormals("saw#43");
@@ -42,3 +41,8 @@ Get the indices of an object:
 var indices = viewer.getIndices("saw#43");
 ```
 
+Get the World-space boundary of an object's vertex positions (see *[Querying boundaries](queryingBoundaries.md)*):
+
+```javascript
+var aabb = viewer.getAABB("saw#43");
+```

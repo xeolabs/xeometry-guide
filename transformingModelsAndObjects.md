@@ -2,8 +2,6 @@
 
 You can independently transform each model and object in your viewer.
 
-[![](assets/transforming.png)](http://xeolabs.com/xeometry/examples/#guidebook_transforming)
-
 ````javascript
 var viewer = new xeometry.Viewer();
 
@@ -21,6 +19,7 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
     viewer.setRotate("saw#1.1", [-120,0,0]);
 });
 ````
+[![](assets/transforms.png)](http://xeolabs.com/xeometry/examples/#guidebook_transforming)
 
 A transform consists of the following operations, applied in this order:
 

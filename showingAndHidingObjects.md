@@ -2,6 +2,8 @@
 
 You can independently show and hide each object in your viewer.
 
+[![](assets/visibility.png)](http://xeolabs.com/xeometry/examples/#guidebook_visibility)
+
 ### Examples
 
 Show everything in a viewer:

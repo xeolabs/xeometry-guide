@@ -4,7 +4,7 @@ You can load multiple glTF 2.0 models into a viewer at the same time, as well as
 
 #### Supported glTF features
 
-xeometry only loads geometries, materials and transforms from glTF, without animations, cameras or lights.
+xeometry only loads glTF geometries, materials and transforms, without animations, cameras or lights.
 
 #### Model and object IDs
 

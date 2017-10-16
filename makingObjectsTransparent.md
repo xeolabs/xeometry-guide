@@ -2,8 +2,6 @@
 
 You can make objects transparent, to reveal other objects behind or inside them.
 
-[![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
-
 ````javascript
 var viewer = new xeometry.Viewer();
 
@@ -16,3 +14,5 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
     viewer.setOpacity(["saw#1", "saw#1.28", "saw#1.1"], 0.3);
 });
 ````
+
+[![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
