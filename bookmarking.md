@@ -14,7 +14,7 @@ The bookmark will save everything, including:
 
 ### Example
 
-To show how bookmarking works, we'll reuse the example from *[Introduction](introduction.md)*. In this example, we're
+To show how bookmarking works, we'll reuse the example from *[Introduction](README.md)*. In this example, we're
 positioning the camera, loading a model, rotating the model, and making some objects transparent, to reveal the insides.
 
 ```javascript
@@ -23,7 +23,7 @@ var viewer = new xeometry.Viewer();
 viewer.setEye([-130, -40, 350]);
 viewer.setLook([-130, -40, 0]);
 
-viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/glTF-MaterialsCommon/ReciprocatingSaw.gltf", function () {
+viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/ReciprocatingSaw.gltf", function () {
     viewer.setRotate("saw", [90, 0, 0]);
     viewer.setOpacity(["saw#3.1", "saw#3.2"], 0.5);
 });
@@ -66,9 +66,8 @@ Our bookmark will look this:
        	}
 	],
 	"lookat": {
-		"eye": [-110.89,0,456.67],
-		"look": [-110.89,0,44.85],
-		"up": [0,1,0]
+		"eye": [-130, -40, 350],
+		"look": [-130, -40, 0]
 	}
 }
 ````
