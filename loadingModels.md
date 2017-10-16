@@ -2,11 +2,7 @@
 
 You can load multiple glTF 2.0 models into a viewer at the same time, as well as multiple copies of the same model.
 
-#### Supported glTF features
-
 xeometry only loads glTF geometries, materials and transforms, without animations, cameras or lights.
-
-#### Model and object IDs
 
 When you load a model, you assign it a  unique ID so that you can find it within the viewer. That ID will get
 prefixed to the IDs of the model's objects. This allows two or more copies of the same model to be loaded at the
@@ -48,9 +44,30 @@ viewer.loadModel("saw2", "./Reciprocating_Saw.gltf",  function () {
     // Loaded
 });
 ```
-[![](assets/loadSameModelTwice.png)](http://xeolabs.com/xeometry/examples/#loading_loadSameModelTwice)
+[![](assets/loadSameModelTwice.png)](http://xeolabs.com/xeometry/examples/#loading_sameModelTwice)
 
-Fly the camera to look at one of our models (see *[Fitting things in view](fittingThingsInView.md)*):
+Unloading a model:
+
+```javascript
+viewer.unloadModel("gearbox");
+```
+
+Clearing everything from the viewer:
+
+```javascript
+viewer.clear();
+```
+
+#### Other things you can do with models
+
+Hide and show a model (see *[Visibility](visibility.md)*):
+
+```javascript
+viewer.hide("gearbox");
+viewer.show("gearbox");
+```
+
+Fly the camera to look at a model (see *[Fitting things in view](fittingThingsInView.md)*):
 
 ```javascript
 viewer.viewFit("gearbox", function() {
@@ -64,28 +81,24 @@ Get IDs of all models currently loaded (see *[Querying Models and Objects](query
 var models = viewer.getModels();
 ```
 
-Get IDs of objects in one of our models (see *[Querying Models and Objects](queryingModelsAndObjects.md)*):
+Get IDs of objects in a model (see *[Querying Models and Objects](queryingModelsAndObjects.md)*):
 
 ```javascript
 var saw = viewer.getObjects("gearbox");
 ```
 
-Get World-space boundary of one of our models (see *[Querying Boundaries](queryingBoundaries.md)*):
+Get the World-space boundary of a model (see *[Querying Boundaries](queryingBoundaries.md)*):
 
 ```javascript
 var saw = viewer.getObjects("gearbox");
 ```
 
-Unloading a model:
+Transform a model (see *[Transforming](transforming.md)*):
 
 ```javascript
-viewer.unloadModel("gearbox");
-```
-
-Clearing everything from the viewer:
-
-```javascript
-viewer.clear();
+viewer.setTranslate("gearbox", [100,0,0]);
+viewer.setScale("gearbox", [0.5,0.5,0.5]);
+viewer.setRotate("gearbox", [90,0,0]);
 ```
 
 
