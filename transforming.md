@@ -5,19 +5,16 @@ You can independently transform each model and object in your viewer.
 ````javascript
 var viewer = new xeometry.Viewer();
 
-viewer.setEye([-112.3, -32.33, 334.81]);
-viewer.setLook([-103.53, -20.64, 0]);
-viewer.setUp([0, 1, -0.01]);
+viewer.setEye([53.06, -198.07, 302.47]);
+viewer.setLook([-110.88, -24.57, 87.87]);
+viewer.setUp([0.38, 0.76, 0.50]);
 
-viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
-
-    // Transform model
+viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/glTF-MaterialsCommon/ReciprocatingSaw.gltf", function () {
     viewer.setRotate("saw", [90, 0, 0]);
-
-    // Translate and rotate the cover panel
-    viewer.setTranslate("saw#1.1", [0,20,-70]);
-    viewer.setRotate("saw#1.1", [-120,0,0]);
+    viewer.setTranslate("saw#3.1", [0, 80, -50]);
+    viewer.setRotate("saw#3.1", [-90, 0, 0]);
 });
+
 ````
 [![](assets/transforms.png)](http://xeolabs.com/xeometry/examples/#guidebook_transforming)
 
