@@ -2,7 +2,7 @@
 
 An annotation is a labeled pin that's attached to the surface of an object.
 
-[![](http://xeolabs.com/xeometry/assets/annotations.png)](http://xeolabs.com/xeometry/examples/#guidebook_annotations)
+[![](assets/annotations.png)](http://xeolabs.com/xeometry/examples/#guidebook_annotations)
 
 An annotation is pinned within a triangle of an object's geometry, at a position given in barycentric coordinates. A
 barycentric coordinate is a three-element vector that indicates the position within the triangle as a weight per vertex,
