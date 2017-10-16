@@ -1,23 +1,25 @@
 ## Transforming
 
-You can independently transform each model and object in your viewer. A transform consists of the following operations,
+You can independently transform each model and object in your viewer. A transform consists of the following operations,  
 applied in this order:
 
- 1. scale
- 2. X-axis rotation \(degrees\),
- 3. Y-axis rotation,
- 4. Z-axis rotation
- 5. translation
+1. scale
+2. X-axis rotation \(degrees\),
+3. Y-axis rotation,
+4. Z-axis rotation
+5. translation
 
 An object's transform is relative to its model's transform.
 
-Transforming an object will dynamically update its boundary and geometry vertex positions. Transforming a model will
-dynamically update its boundary, along with the boundary and geometry vertex positions of each of its objects
-(see *[Querying Boundaries](queryingBoundaries.md)* and *[Querying Geometry](queryingGeometry.md)*).
+Transforming an object will dynamically update its boundary and geometry vertex positions. Transforming a model will  
+dynamically update its boundary, along with the boundary and geometry vertex positions of each of its objects  
+\(see [_Querying Boundaries_](queryingBoundaries.md) and [_Querying Geometry_](queryingGeometry.md)\).
 
 ### Example
 
-````javascript
+In the example below, we'll load a glTF model of a reciprocating saw. Then we rotate the saw 90 degrees about its local X axis, so that we see it from the side. Finally, we translate and rotate a cover object to reveal the saw's inner objects.
+
+```javascript
 var viewer = new xeometry.Viewer();
 
 viewer.setEye([53.06, -198.07, 302.47]);
@@ -29,24 +31,23 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
     viewer.setTranslate("saw#3.1", [0, 80, -50]);
     viewer.setRotate("saw#3.1", [-90, 0, 0]);
 });
+```
 
-````
 [![](assets/transforms.png)](http://xeolabs.com/xeometry/examples/#guidebook_transforming)
-
 
 ### More examples
 
-Translate a model along the X axis, scale it, then rotate it 90 degrees about its X-axis:
+Translating a model along the X axis, scale it, then rotate it 90 degrees about its X-axis:
 
-````javascript
+```javascript
 viewer.setTranslate("saw", [100,0,0]);
 viewer.setScale("saw", [0.5,0.5,0.5]);
 viewer.setRotate("saw", [90,0,0]);
-````
+```
 
-Spin an object about its Y-axis:
+Spinning an object about its Y-axis:
 
-````javascript
+```javascript
 var angles =[0,0,0]; // Tait-Bryant angles about X, Y and Z, in degrees
 function spin() {
     viewer.setRotate("saw#3.1", angles);
@@ -54,22 +55,23 @@ function spin() {
     requestAnimationFrame(spin);
 }
 spin();
-````
+```
 
-Get a model's translation, scale and rotation:
+Getting a model's translation, scale and rotation:
 
-````javascript
+```javascript
 var translate = viewer.setTranslate("saw");
 var scale = viewer.setScale("saw");
 var rotate = viewer.setRotate("saw");
-````
+```
 
-Get an object's translation, scale and rotation:
+Getting an object's translation, scale and rotation:
 
-````javascript
+```javascript
 var translate = viewer.setTranslate("saw#3.1");
 var scale = viewer.setScale("saw#3.1");
 var rotate = viewer.setRotate("saw#3.1");
-````
+```
+
 
 
