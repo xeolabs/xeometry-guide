@@ -1,10 +1,10 @@
 # Visibility
 
-You can independently show and hide each object in your viewer. 
+You can independently show and hide each object in your viewer.
 
 ### Example
 
-In the example below, we'll load a glTF model of a reciprocating saw, then hide a couple of its panel objects to reveal its inner workings.
+In the example below, we'll load a glTF model of a reciprocating saw. Then we'll hide a couple of its panel objects, to reveal its inner workings.
 
 ```
 var viewer = new xeometry.Viewer();

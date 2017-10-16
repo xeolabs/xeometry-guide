@@ -4,7 +4,7 @@ You can make objects transparent, to reveal other objects behind or inside them.
 
 ### Example
 
-In the example below, we'll load a glTF model of a reciprocating saw, then make its handle transparent, to reveal its inner workings.
+In the example below, we'll load a glTF model of a reciprocating saw. Then we'll make a couple of its panel objects transparent, to reveal its inner workings.
 
 ```javascript
 var viewer = new xeometry.Viewer();
