@@ -32,7 +32,7 @@
 * [Visibility](visibility.md)
 * [Transparency](transparency.md)
 * [Transforming](transforming.md)
-* [Outlining](outling.md)
+* [Outlining](outlining.md)
 * [Clipping](clipping.md)
 * [Annotations](annotations.md)
 
