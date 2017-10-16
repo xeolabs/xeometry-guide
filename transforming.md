@@ -15,6 +15,8 @@ Transforming an object will dynamically update its boundary and geometry vertex 
 dynamically update its boundary, along with the boundary and geometry vertex positions of each of its objects
 (see *[Querying Boundaries](queryingBoundaries.md)* and *[Querying Geometry](queryingGeometry.md)*).
 
+### Example
+
 ````javascript
 var viewer = new xeometry.Viewer();
 

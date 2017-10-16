@@ -2,6 +2,8 @@
 
 You can emphasize objects in your viewer by displaying outlines around them.
 
+### Example
+
 ````javascript
 var viewer = new xeometry.Viewer();
 

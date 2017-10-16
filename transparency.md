@@ -2,6 +2,8 @@
 
 You can make objects transparent, to reveal other objects behind or inside them.
 
+### Example
+
 ````javascript
 var viewer = new xeometry.Viewer();
 
