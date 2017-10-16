@@ -10,7 +10,7 @@ Geometry consists of:
 * array of tangent-space vertex normal vectors (Float32Array), and
 * array of indices (Int16Array or Int32Array), which index the vertex arrays to form primitives.
 
-Note that transforming an object will modify its vertex positions (see *[Transforming Models and Objects](transformingModelsAndObjects.md)*).
+Note that transforming an object will modify its vertex positions (see *[Transforming](transforming.md)*).
 
 ### Examples
 

@@ -40,7 +40,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 });
 ````
 
-**Example:** Hide each clicked object (see [Showing and Hiding Objects](showingAndHidingObjects.md)):
+**Example:** Hide each clicked object (see [Visibility](visibility.md)):
 
 ````javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -69,7 +69,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 Like the previous type of picking, this one also picks the closest object behind the given canvas coordinates, but also
 gets geometric information about the point on the object's surface that lies right behind those canvas coordinates.
 
-**Example:** Annotate an object by clicking it (see [Creating Annotations](creatingAnnotations.md)):
+**Example:** Annotate an object by clicking it (see [Creating Annotations](annotations.md)):
 
 ````javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {

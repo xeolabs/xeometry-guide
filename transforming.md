@@ -1,4 +1,4 @@
-## Transforming Models and Objects
+## Transforming
 
 You can independently transform each model and object in your viewer.
 
@@ -33,7 +33,7 @@ An object's transform is relative to its model's transform.
 
 Transforming an object will dynamically update its boundary and geometry vertex positions.
 
-Transforming a model will dynamically update its boundary, along with the boundary and geometry vertex positions of each  
+Transforming a model will dynamically update its boundary, along with the boundary and geometry vertex positions of each
 of its objects.
 
 ### Examples

@@ -1,4 +1,4 @@
-# Showing and Hiding Objects
+# Visibility
 
 You can independently show and hide each object in your viewer.
 

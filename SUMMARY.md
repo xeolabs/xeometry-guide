@@ -29,21 +29,21 @@
 
 ## Customizing the view
 
-* [Showing and Hiding Objects](showingAndHidingObjects.md)
-* [Making Objects Transparent](makingObjectsTransparent.md)
-* [Transforming Models and Objects](transformingModelsAndObjects.md)
-* [Outlining objects](outlingObjects.md)
+* [Visibility](visibility.md)
+* [Transparency](transparency.md)
+* [Transforming](transforming.md)
+* [Outlining](outlingObjects.md)
 * [Clipping](clipping.md)
 * [Annotations](annotations.md)
 
 ## Saving the view
 
-* [Viewer Bookmarks](viewerBookmarks.md)
+* [Bookmarks](bookmarks.md)
 * [Canvas snapshots](canvasSnapshots.md)
 
 ## Picking
 
-* [Picking Objects](pickingObjects.md)
+* [Picking](picking.md)
 
 ## Appendix
 
