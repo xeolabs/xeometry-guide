@@ -14,8 +14,8 @@
 ## Querying
 
 * [Querying models and objects](queryingModelsAndObjects.md)
-* [Querying boundaries](queryingBoundaries.md)
-* [Querying geometry](queryingObjectGeometries.md)
+* [Querying Boundaries](queryingBoundaries.md)
+* [Querying geometry](queryingGeometry.md)
 
 ## Camera
 

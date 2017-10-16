@@ -13,7 +13,7 @@ An object's transform is relative to its model's transform.
 
 Transforming an object will dynamically update its boundary and geometry vertex positions. Transforming a model will
 dynamically update its boundary, along with the boundary and geometry vertex positions of each of its objects
-(see *[Querying boundaries](queryingBoundaries.md)*).
+(see *[Querying Boundaries](queryingBoundaries.md)* and *[Querying Geometry](queryingGeometry.md)*).
 
 ````javascript
 var viewer = new xeometry.Viewer();

@@ -45,7 +45,7 @@ viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
 });
 ```
 
-Get collective boundary of all objects of the given types  (see: *[Querying boundaries](queryingBoundaries.md)*):
+Get collective boundary of all objects of the given types  (see: *[Querying Boundaries](queryingBoundaries.md)*):
 
 ```javascript
 var objectsBoundary = viewer.getAABB(["IfcFlowController", "IfcFlowFitting"]);

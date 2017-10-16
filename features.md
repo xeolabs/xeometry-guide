@@ -15,8 +15,8 @@ Things you can do through the xeometry API:
 * Create custom clipping planes - see *[Clipping](clipping.md)*
 * Create light sources - see *[Creating light sources](creatingLightSources.md)*
 * Draw outlines around objects to emphasise them - see *[Outlining](outlining.md)*
-* Query 3D boundaries of models and objects - see *[Querying boundaries](queryingBoundaries.md)*
-* Query 3D geometry of objects - see *[Querying object geometries](queryingObjectGeomatries.md)*
+* Query 3D boundaries of models and objects - see *[Querying Boundaries](queryingBoundaries.md)*
+* Query 3D geometry of objects - see *[Querying Geometry](queryingGeometry.md)*
 * Pick objects with canvas coordinates or 3D ray - see *[Picking](picking.md)*
 * Take canvas snaphots - see *[Canvas snapshots](canvasSnapshots.md)*
 * Save and load JSON bookmarks of viewer state - see *[Bookmarking](bookmarking.md)*

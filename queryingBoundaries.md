@@ -1,4 +1,4 @@
-# Querying boundaries
+# Querying Boundaries
 
 You can dynamically query the boundaries of models and objects in your viewer.
 

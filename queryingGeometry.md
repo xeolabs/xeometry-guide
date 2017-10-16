@@ -41,7 +41,7 @@ Get the indices of an object:
 var indices = viewer.getIndices("saw#43");
 ```
 
-Get the World-space boundary of an object's vertex positions (see *[Querying boundaries](queryingBoundaries.md)*):
+Get the World-space boundary of an object's vertex positions (see *[Querying Boundaries](queryingBoundaries.md)*):
 
 ```javascript
 var aabb = viewer.getAABB("saw#43");
