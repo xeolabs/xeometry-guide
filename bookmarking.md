@@ -6,11 +6,10 @@ load the bookmark again (perhaps even into a different viewer), it will exactly 
 The bookmark will save everything, including:
 
 * models loaded,
-* object visibilities, opacities, outlines and types
-* model and object transforms
-* camera position and projection
-* annotations, clipping planes, light sources
-* etc.
+* object visibilities, opacities, outlines and types,
+* model and object transforms,
+* camera position and projection, and
+* annotations, clipping planes and light sources.
 
 ### Example
 
