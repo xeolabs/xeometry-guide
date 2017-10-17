@@ -1,8 +1,8 @@
 # Annotations
 
-An annotation is a label that's pinned to the surface of an object.
+An annotation is a label that you can pin to the surface of an object.
 
-An annotation is located at barycentric coordinates within a triangle within the geometry of its object. 
+An annotation is located at barycentric coordinates inside a triangle within the geometry of its object.
 
 An annotation can be configured with an suggested camera position from which to view it.
 
