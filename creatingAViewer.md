@@ -1,6 +1,6 @@
 # Creating a Viewer
 
-To get started, your first step is to link to the xeometry [library](http://xeolabs.com/xeometry/build/xeometry.min.js):
+Your first step is to link to the xeometry [library](http://xeolabs.com/xeometry/build/xeometry.min.js):
 
 ```html
 <script src="xeometry.js"></script>
