@@ -1,12 +1,13 @@
 # Clipping
 
 You can create an unlimited number of arbitrarily-positioned clipping planes in your viewer. You can also mask which
-objects in your viewer are clipped by them.
+objects are clipped by them.
 
 ### Example
 
-In the example below, we'lll position the camera and create a clipping plane that slices through the Wworld-space origin,
-then we'll load a glTF model of a reciprocating saw, which will get sliced by our plane.
+In the example below, we'll position the camera and create a clipping plane that passes through the World-space origin
+and discards everything on the +Z side. Then we'll load a glTF model of a reciprocating saw, which will get sliced in
+half by our clipping  plane, to reveal some of its inner workings.
 
 ````javascript
 var viewer = new xeometry.Viewer();
