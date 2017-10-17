@@ -1,10 +1,8 @@
 # Querying Boundaries
 
-You can dynamically query the boundaries of models and objects in your viewer.
+Each model and object in a viewer has its own boundary, provided as an axis-aligned bounding box \(_AABB\)_. Whenever you transform a model or an object, you'll also automatically change the extents of its boundary \(see [_Transforming_](transforming.md)\). 
 
-A boundary is an axis-aligned bounding box \(_AABB_\) given as an array of values `[xmin, ymin, zmin, xmax, ymax, zmax]`.
-
-Note that transforming a model or object will change its boundary extents (see *[Transforming](transforming.md)*).
+As shown in the examples below, xeometry has a flexible query method that allows you to query the either the boundaries of individual models and objects, or the collective boundary of an assortment of models, objects and types. 
 
 ### Examples
 
@@ -26,7 +24,7 @@ Get collective boundary of two objects:
 var objectsBoundary = viewer.getAABB(["saw34", "saw5"]);
 ```
 
-Get collective boundary of all objects of the given types (see *[Assigning types to objects](assigningTypesToObjects.md)*):
+Get collective boundary of all objects of the given types \(see [_Assigning types to objects_](assigningTypesToObjects.md)\):
 
 ```javascript
 var objectsBoundary = viewer.getAABB(["IfcFlowController", "IfcFlowFitting"]);
