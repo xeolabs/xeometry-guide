@@ -4,7 +4,7 @@ You can emphasize objects in your viewer by displaying outlines around them.
 
 ### Example
 
-In the example below, we'll position the camera and configure the appearance of outlines. Then we'll load a glTF model of a reciprocating saw. When that's loaded, we'll show outlines around three objects in the model. 
+In the example below, we'll position the camera and configure the appearance of outlines. Then we'll load a glTF model of a reciprocating saw. When that's loaded, we'll show outlines around three objects in the saw.
 
 ```javascript
 var viewer = new xeometry.Viewer();
