@@ -1,13 +1,10 @@
 # Loading Models
 
-You can load multiple glTF 2.0 models into a viewer at the same time, as well as multiple copies of the same model.
+You can load multiple glTF 2.0 models into a xeometry viewer at the same time, as well as multiple copies of the same model.
 
 xeometry only loads glTF geometries, materials and transforms, without animations, cameras or lights.
 
-When you load a model, you assign it a  unique ID so that you can find it within the viewer. That ID will get  
-prefixed to the IDs of the model's objects. This allows two or more copies of the same model to be loaded at the  
-same time, without ID clashes between their objects. See [_Querying Models and Objects_](queryingModelsAndObjects.md)  
-for querying the IDs of the objects within your loaded models.
+When you load a model, you assign it a  unique ID so that you can find it within the viewer. That ID will get prefixed to the IDs of the model's objects. This allows two or more copies of the same model to be loaded at the same time, without ID clashes between their objects. See [_Querying Models and Objects_](queryingModelsAndObjects.md) for querying the IDs of the objects within your loaded models.
 
 ### Examples
 

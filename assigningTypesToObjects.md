@@ -1,6 +1,6 @@
 # Assigning types to objects
 
-Each object in your viewer may optionally be assigned a type. Types are strings that mean something within the domain of your application. When using xeometry as an IFC viewer, for example, then types would likely be IFC element types.
+Each object in your viewer may be optionally assigned a type. Types are strings that mean something within the domain of your application. When using xeometry as an IFC viewer, for example, then types would likely be IFC element types.
 
 When you have assigned types to your objects, then you can specify types as the targets for various xeometry methods.
 
@@ -25,19 +25,20 @@ Get all types in the viewer:
 var types = viewer.getTypes();
 ```
 
-Get all objects of the given type (see *[Querying Models and Objects](queryingModelsAndObjects.md)*):
+Get all objects of the given type \(see [_Querying Models and Objects_](queryingModelsAndObjects.md)\):
 
 ```javascript
 var typeObjects = viewer.getObjects("ifcCurtainWall");
 ```
 
-Making all objects transparent except for the given types (see *[Transparency](transparency.md)*):
+Making all objects transparent except for the given types \(see [_Transparency_](transparency.md)\):
+
 ```javascript
 viewer.setOpacity(0.4);
 viewer.setOpacity(["IfcFlowController", "IfcFlowFitting"], 1.0);
 ```
 
-Fly camera to fit all objects of the given types (see *[Fitting things in view](fittingThingsInView.md)*):
+Fly camera to fit all objects of the given types \(see [_Fitting things in view_](fittingThingsInView.md)\):
 
 ```javascript
 viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
@@ -45,8 +46,11 @@ viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
 });
 ```
 
-Get collective boundary of all objects of the given types  (see: *[Querying Boundaries](queryingBoundaries.md)*):
+Get collective boundary of all objects of the given types  \(see: [_Querying Boundaries_](queryingBoundaries.md)\):
 
 ```javascript
 var objectsBoundary = viewer.getAABB(["IfcFlowController", "IfcFlowFitting"]);
 ```
+
+
+

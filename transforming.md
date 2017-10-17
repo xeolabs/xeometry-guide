@@ -12,8 +12,7 @@ applied in this order:
 An object's transform is relative to its model's transform.
 
 Transforming an object will dynamically update its boundary and geometry vertex positions. Transforming a model will  
-dynamically update its boundary, along with the boundary and geometry vertex positions of each of its objects  
-\(see [_Querying Boundaries_](queryingBoundaries.md) and [_Querying Geometry_](queryingGeometry.md)\).
+dynamically update its boundary, along with the boundary and geometry vertex positions of each of its objects \(see [_Querying Boundaries_](queryingBoundaries.md) and [_Querying Geometry_](queryingGeometry.md)\).
 
 ### Example
 

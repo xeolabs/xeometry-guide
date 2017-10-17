@@ -1,29 +1,25 @@
 # Annotations
 
-An annotation is a labeled pin that's attached to the surface of an object.
+An annotation is a label that you can pin to the surface of an object.
 
-An annotation is pinned within a triangle of an object's geometry, at a position given in barycentric coordinates. A
-barycentric coordinate is a three-element vector that indicates the position within the triangle as a weight per vertex,
-where a value of [0.3,0.3,0.3] places the annotation at the center of its triangle.
+An annotation is located at barycentric coordinates inside a triangle within the geometry of its object.
 
-An annotation can be configured with an optional camera position from which to view it, given as eye, look and up vectors.
+An annotation can be configured with an suggested camera position from which to view it.
 
-By default, an annotation will be invisible while occluded by other objects in the 3D view.
-
-Note that when you pick an object with #.Viewer#rayCastSurface or #.Viewer#pickSurface, you'll get a triangle index and
-barycentric coordinates in the intersection result. This makes it convenient to create annotations directly from pick
-results.
+By default, an annotation will become invisible while occluded by other objects in the 3D view.
 
 ### Example
 
-````javascript
+In the example below, we'll position the camera and load a glTF model of a reciprocating saw. When the model has loaded, we'll rotate it so that we can see it from the side. Then we'll hide a couple of cover objects so that we can see the armature bearing, which is normally hidden inside the cover. Finally, we'll create annotations on the armature bearing and one of the bearing enclosures.
+
+```javascript
 var viewer = new xeometry.Viewer();
 
 viewer.setEye([-296.56, 26.78, 300.49]);
 viewer.setLook([-130, -40, 0]);
 viewer.getUp([0.09, 0.98, -0.16]);
 
-viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/glTF-MaterialsCommon/ReciprocatingSaw.gltf", function () {
+viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 
     viewer.setRotate("saw", [90, 0, 0]);
 
@@ -59,6 +55,7 @@ viewer.loadModel("saw", "models/gltf/ReciprocatingSaw/glTF-MaterialsCommon/Recip
         occludable: true
     });
 });
-````
+```
 
 [![](assets/annotations.png)](http://xeolabs.com/xeometry/examples/#guidebook_annotations)
+
