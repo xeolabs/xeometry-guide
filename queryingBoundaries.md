@@ -1,8 +1,8 @@
 # Querying Boundaries
 
-Each model and object in a viewer has its own boundary, provided as an axis-aligned bounding box \(_AABB\)_. Whenever you transform a model or an object, you'll also automatically change the extents of its boundary \(see [_Transforming_](transforming.md)\). 
+Each model and object in a viewer has its own boundary, provided as an axis-aligned bounding box \(_AABB\)_. Whenever you transform a model or an object, you'll also automatically change the extents of its boundary \(see [_Transforming_](transforming.md)\).
 
-As shown in the examples below, xeometry has a flexible query method that allows you to query the either the boundaries of individual models and objects, or the collective boundary of an assortment of models, objects and types. 
+As shown in the examples below, xeometry has a flexible method that allows you to query the either the boundaries of individual models and objects, or the collective boundary of an assortment of models, objects and types.
 
 ### Examples
 
