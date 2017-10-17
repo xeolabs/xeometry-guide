@@ -6,7 +6,7 @@ You can independently show and hide each object in your viewer.
 
 In the example below, we'll load a glTF model of a reciprocating saw. Then we'll hide a couple of its panel objects, to reveal its inner workings.
 
-```
+```javascript
 var viewer = new xeometry.Viewer();
 
 viewer.setEye([-130, -40, 350]);
