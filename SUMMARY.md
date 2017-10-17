@@ -32,8 +32,8 @@
 * [Visibility](visibility.md)
 * [Transparency](transparency.md)
 * [Transforming](transforming.md)
-* [Outlining](outlining.md)
 * [Clipping](clipping.md)
+* [Outlining](outlining.md)
 * [Annotations](annotations.md)
 
 ## Picking
@@ -52,5 +52,5 @@
 
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
-* [Creating input controls]()
+* Creating input controls
 

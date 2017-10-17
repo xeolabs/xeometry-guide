@@ -4,7 +4,9 @@ You can emphasize objects in your viewer by displaying outlines around them.
 
 ### Example
 
-````javascript
+In the example below, we'll position the camera and configure the appearance of outlines. Then we'll load a glTF model of a reciprocating saw. When that's loaded, we'll show outlines around three objects in the model. 
+
+```javascript
 var viewer = new xeometry.Viewer();
 
 viewer.setEye([-130, -40, 350]);
@@ -14,11 +16,9 @@ viewer.setOutlineColor([1, 1, 0]);
 viewer.setOutlineThickness(8);
 
 viewer.loadModel("gearbox", "GearboxAssy.gltf", function () {
-    viewer.showOutline([
-        "gearbox#1", "gearbox#1.0", "gearbox#1.1", "gearbox#1.2" // ...
-    ]);
+    viewer.showOutline(["gearbox#1", "gearbox#1.0", "gearbox#1.1"]);
 });
-````
+```
 
 [![](assets/outlining.png)](http://xeolabs.com/xeometry/examples/#guidebook_outlining)
 
@@ -31,10 +31,12 @@ viewer.hideOutline();
 viewer.showOutline("saw");
 ```
 
-Outlining the given types (see *[Assigning types to objects](assigningTypesToObjects.md)*):
+Outlining the given types \(see [_Assigning types to objects_](assigningTypesToObjects.md)\):
 
 ```javascript
 viewer.hideOutline();
 viewer.showOutline(["IfcFlowController", "IfcFlowFitting"]);
 ```
+
+
 
