@@ -1,8 +1,8 @@
 # Querying Models and Objects
 
-You can query the IDs of the models and objects that are currently loaded in your viewer.
+You can query the IDs of the models and objects that are currently loaded in your viewer. You can then use those IDs to access the models and objects, to query and update them individually.
 
-The ID of each object is prefixed by the ID of its model, for example: "&lt;model ID&gt;\#&lt;object ID&gt;". 
+The ID of each object is prefixed by the ID of its model, for example: "&lt;model ID&gt;\#&lt;object ID&gt;".
 
 Each object corresponds to a `node` element within its model's glTF file. If the `node` has a `name` attribute, then that's used for the object part of the ID, eg. "saw\#outerCasing". Otherwise, the index of the `node` within the flTF file's `nodes` section is used, eg. "saw\#23".
 
