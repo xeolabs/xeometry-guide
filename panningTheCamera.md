@@ -2,13 +2,15 @@
 
 You can pan the camera along its local axis.
 
-Panning translates the camera's `eye` and `look` positions in unison.
+* Horizontal panning moves the camera along the axis perpendicular to its _eye_-&gt;_look_ and _up_ vectors.
+* Vertical panning moves the camera along its _up _vector_._
+* Forward and backward panning moves the camera along its _eye_-&gt;_look_ vector.
 
-* Horizontal panning moves the camera along the axis perpendicular to `eye->look` and `up`.
-* Vertical panning moves the camera along `up`.
-* Forward and backward panning moves the camera along the `eye->look` vector.
+Panning translates _eye_ and _look_ in unison, and does not affect _up_.
 
 ### Examples
+
+Setting an initial camera position:
 
 ```
 viewer.setEye([0, 0, -100]);
