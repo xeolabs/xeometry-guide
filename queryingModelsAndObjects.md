@@ -22,7 +22,7 @@ var objectIds = viewer.getObjects();
 // Eg. ["saw#1", "saw#1.2", "saw#2", "gearbox#1", "gearbox#1.1", ...]
 ```
 
-Note how each ID is prefixed with the ID of its object's model. 
+Note how each ID is prefixed with the ID of its object's model.
 
 Getting all objects in a model:
 
@@ -35,12 +35,14 @@ Getting an object's model:
 
 ```javascript
 var modelId = viewer.getModel("saw#23");
+// Returns "saw" 
 ```
 
 Getting all objects of the given types \(see [_Assigning types to objects_](assigningTypesToObjects.md)\):
 
 ```javascript
 var flowObjectIds = viewer.getObjects(["IfcFlowController", "IfcFlowFitting"]);
+// Eg. ["saw#1", "saw#1.2", "saw#2", ...]
 ```
 
 
