@@ -11,31 +11,31 @@ Each object corresponds to a `node` element within its model's glTF file. If the
 Getting all models in a viewer:
 
 ```javascript
-var models = viewer.getModels();
+var modelIds = viewer.getModels();
 ```
 
-Getting all objects:
+Getting all objects in a viewer:
 
 ```javascript
-var objects = viewer.getObjects();
+var objectIds = viewer.getObjects();
 ```
 
 Get all objects in a model:
 
 ```javascript
-var saw = viewer.getObjects("saw");
+var sawObjectIDs = viewer.getObjects("saw");
 ```
 
 Get an object's model:
 
 ```javascript
-var model = viewer.getModel("saw#23");
+var modelId = viewer.getModel("saw#23");
 ```
 
 Get all objects of the given types \(see [_Assigning types to objects_](assigningTypesToObjects.md)\):
 
 ```javascript
-viewer.getObjects(["IfcFlowController", "IfcFlowFitting"]);
+var flowObjectIds = viewer.getObjects(["IfcFlowController", "IfcFlowFitting"]);
 ```
 
 

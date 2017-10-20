@@ -59,17 +59,17 @@ spin();
 Getting a model's translation, scale and rotation:
 
 ```javascript
-var translate = viewer.setTranslate("saw");
-var scale = viewer.setScale("saw");
-var rotate = viewer.setRotate("saw");
+var translate = viewer.getTranslate("saw");
+var scale = viewer.getScale("saw");
+var rotate = viewer.getRotate("saw");
 ```
 
 Getting an object's translation, scale and rotation:
 
 ```javascript
-var translate = viewer.setTranslate("saw#3.1");
-var scale = viewer.setScale("saw#3.1");
-var rotate = viewer.setRotate("saw#3.1");
+var translate = viewer.getTranslate("saw#3.1");
+var scale = viewer.getScale("saw#3.1");
+var rotate = viewer.getRotate("saw#3.1");
 ```
 
 
