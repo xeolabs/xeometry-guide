@@ -8,7 +8,7 @@ Each object corresponds to a `node` element within its model's glTF file. If the
 
 ### Examples
 
-Getting \(the IDs of\) all models in a viewer:
+Getting the IDs of all models in a viewer:
 
 ```javascript
 var modelIds = viewer.getModels();
@@ -19,6 +19,7 @@ Getting all objects in a viewer:
 
 ```javascript
 var objectIds = viewer.getObjects();
+// Eg. ["saw#1", "saw#1.2", "saw#2", ...]
 ```
 
 Get all objects in a model:
