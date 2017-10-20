@@ -1,6 +1,12 @@
 # Querying Boundaries
 
-Each model and object in a viewer has its own boundary, provided as an axis-aligned bounding box \(_AABB\)_. 
+Each model and object in a viewer has a boundary. 
+
+Each object's boundary dynamically fits to the World-space extents of the object's geometry vertex positions. This means that an object's boundary will automatically remain fitted to the object whenever you've updated the object's transforms, or updated the transforms of the object's model \(see [_Transforming_](transforming.md)\).
+
+Each model's boundary dynamically fits to the collective boundary of the model's objects. This means that the boundary will automatically remain fitted to the objects whenever you transform one them, or transform the model itself.    
+
+Each object's boundary that encloses provided as an axis-aligned bounding box \(_AABB\)_.
 
 Whenever you transform a model or an object, you'll automatically update the extents of its boundary \(see [_Transforming_](transforming.md)\).
 
