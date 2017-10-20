@@ -12,8 +12,6 @@ Each object's boundary dynamically fits to the World-space extents of the object
 
 Each model's boundary dynamically fits to the collective boundary of the model's objects. This means that the boundary will automatically remain fitted to the objects whenever you transform one of them, or transform the model itself. Note that object transforms are within the coordinate space set up by their model's transforms.
 
-Whenever you transform a model or an object, you'll automatically update the extents of its boundary \(see [_Transforming_](transforming.md)\).
-
 As shown in the examples below, xeometry has a flexible method that allows you to query either the boundaries of individual models and objects, or the collective boundary of an assortment of models, objects and types.
 
 ### Examples
