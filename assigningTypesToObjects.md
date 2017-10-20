@@ -6,26 +6,26 @@ When you have assigned types to your objects, then you can specify types as the 
 
 ### Examples
 
-Assign IFC types to two objects:
+Assigning IFC types to two objects:
 
 ```javascript
 viewer.setType("house#12", "IfcFlowController");
 viewer.setType("house#23", "IfcFlowFitting");
 ```
 
-Get the type of an object:
+Getting the type of an object:
 
 ```javascript
 var type = viewer.getType("house#12");
 ```
 
-Get all types in the viewer:
+Getting all types in the viewer:
 
 ```javascript
 var types = viewer.getTypes();
 ```
 
-Get all objects of the given type \(see [_Querying Models and Objects_](queryingModelsAndObjects.md)\):
+Getting all objects of the given type \(see [_Querying Models and Objects_](queryingModelsAndObjects.md)\):
 
 ```javascript
 var typeObjects = viewer.getObjects("ifcCurtainWall");
@@ -38,7 +38,7 @@ viewer.setOpacity(0.4);
 viewer.setOpacity(["IfcFlowController", "IfcFlowFitting"], 1.0);
 ```
 
-Fly camera to fit all objects of the given types \(see [_Fitting things in view_](fittingThingsInView.md)\):
+Flying the camera to fit all objects of the given types \(see [_Fitting things in view_](fittingThingsInView.md)\):
 
 ```javascript
 viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
@@ -46,7 +46,7 @@ viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
 });
 ```
 
-Get collective boundary of all objects of the given types  \(see: [_Querying Boundaries_](queryingBoundaries.md)\):
+Getting collective boundary of all objects of the given types  \(see: [_Querying Boundaries_](queryingBoundaries.md)\):
 
 ```javascript
 var objectsBoundary = viewer.getAABB(["IfcFlowController", "IfcFlowFitting"]);
