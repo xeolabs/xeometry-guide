@@ -1,6 +1,6 @@
 # Querying Models and Objects
 
-You can query the IDs of the models and objects that are currently loaded in your viewer. You can then use those IDs to access the models and objects, to do things like query their boundaries or set their visibilities. 
+You can query the IDs of the models and objects that are currently loaded in your viewer. You can then use those IDs to access the models and objects, to do things like query their boundaries or [set their visibilities](visibility.md).
 
 The ID of each object is prefixed by the ID of its model, for example: "&lt;model ID&gt;\#&lt;object ID&gt;".
 
