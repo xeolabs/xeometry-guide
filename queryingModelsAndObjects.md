@@ -8,13 +8,13 @@ Each object corresponds to a `node` element within its model's glTF file. If the
 
 ### Examples
 
-Get all models:
+Getting all models in a viewer:
 
 ```javascript
 var models = viewer.getModels();
 ```
 
-Get all objects:
+Getting all objects:
 
 ```javascript
 var objects = viewer.getObjects();
