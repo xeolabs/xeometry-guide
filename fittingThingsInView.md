@@ -4,7 +4,7 @@ You can fly or jump the camera to fit given models, objects, types or boundaries
 
 ### Examples
 
-Configure camera to fly for two seconds as it moves to each new target:
+Configuring the camera to fly for two seconds as it moves to each new target:
 
 ```javascript
 viewer.setViewFitDuration(2); // Seconds
@@ -12,7 +12,7 @@ viewer.setViewFitDuration(2); // Seconds
 
 When the duration greater than zero, the camera will fly, otherwise it will jump straight to each new target.
 
-Fly camera to given position:
+Flying camera to a given position:
 
 ```javascript
 // Eye, look and "up" vector
@@ -21,7 +21,7 @@ viewer.setEyeLookUp([0,0,-100],[0,0,0],[0,1,0], function() {
 });
 ```
 
-Fly camera to fit everything in view:
+Flying the camera to fit everything in view:
 
 ```javascript
 viewer.viewFit(function() {
@@ -29,7 +29,7 @@ viewer.viewFit(function() {
 });
 ```
 
-Fly camera to fit a boundary in view:
+Fly the camera to fit a boundary in view \(see [_Querying Boundaries_](https://www.gitbook.com/book/xeolabs/xeometry/edit#)\):
 
 ```javascript
 viewer.viewFit([-50,-25,-50, 50, 25, 50], function() {
@@ -40,7 +40,7 @@ viewer.viewFit([-50,-25,-50, 50, 25, 50], function() {
 > A boundary is an axis-aligned bounding box \(_AABB_\) in World-space, given as an array of  
 > values `[xmin, ymin, zmin, xmax, ymax, zmax]`.
 
-Fly camera to fit a model in view:
+Flying the camera to fit a model in view:
 
 ```javascript
 viewer.viewFit("saw", function() {
@@ -48,7 +48,7 @@ viewer.viewFit("saw", function() {
 });
 ```
 
-Fly camera to fit two models in view:
+Flying the camera to fit two models in view:
 
 ```javascript
 viewer.viewFit(["saw", "gearbox"], function() {
@@ -56,7 +56,7 @@ viewer.viewFit(["saw", "gearbox"], function() {
 });
 ```
 
-Fly camera to fit all objects of the given types (see *[Assigning types to objects](assigningTypesToObjects.md)*):
+Flying the camera to fit all objects of the given types \(see [_Assigning types to objects_](assigningTypesToObjects.md)\):
 
 ```javascript
 viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
@@ -64,7 +64,7 @@ viewer.viewFit(["IfcFlowController", "IfcFlowFitting"], function() {
 });
 ```
 
-Fly camera to fit a model, two objects, and all objects of the given type:
+Flying the camera to fit a model, two objects, and all objects of the given type:
 
 ```javascript
 viewer.viewFit(["gearbox", "saw#1", "saw#5", "IfcFlowFitting"], function() {
@@ -72,7 +72,7 @@ viewer.viewFit(["gearbox", "saw#1", "saw#5", "IfcFlowFitting"], function() {
 });
 ```
 
-Fly camera to fit all objects of the given types, looking along the World-space -X axis:
+Flying the camera to fit all objects of the given types, looking along the World-space -X axis:
 
 ```javascript
 viewer.viewFitLeft(["IfcFlowController", "IfcFlowFitting"], function() {
@@ -80,7 +80,7 @@ viewer.viewFitLeft(["IfcFlowController", "IfcFlowFitting"], function() {
 });
 ```
 
-Fly camera to fit a model, two objects, and all objects of the given type, looking along the World-space -Y axis:
+Flying the camera to fit a model, two objects, and all objects of the given type, looking along the World-space -Y axis:
 
 ```javascript
 viewer.viewFitTop(["gearbox", "saw#1", "saw#5", "IfcFlowFitting"], function() {
@@ -88,31 +88,31 @@ viewer.viewFitTop(["gearbox", "saw#1", "saw#5", "IfcFlowFitting"], function() {
 });
 ```
 
-Set camera to jump directly to each new position:
+Configuring the camera to jump directly to each new position:
 
 ```javascript
 viewer.setViewFitDuration(0);
 ```
 
-Jump camera to given position:
+Jumping the camera to a given position:
 
 ```javascript
 viewer.setEyeLookUp([-100,0,0],[0,0,0],[0,1,0]);
 ```
 
-Jump camera to fit two objects in view - note we don't need the callback anymore because camera is now jumping:
+Jumping the camera to fit two objects in view - note we don't need the callback anymore because camera is now jumping:
 
 ```javascript
 viewer.viewFit(["saw34", "saw5"]);
 ```
 
-Jump camera to fit a model and two objects in view:
+Jumping the camera to fit a model and two objects in view:
 
 ```javascript
 viewer.viewFit(["gearbox", "saw#2", "saw#5"]);
 ```
 
-Set how much of the field of view that a target boundary will occupy when flying the camera to fit models or objects to the view:
+Setting how much of the field of view that a target boundary will occupy when flying the camera to fit models or objects to the view:
 
 ```javascript
 viewer.setViewFitFOV(20); // Degrees
