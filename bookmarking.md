@@ -1,7 +1,7 @@
 # Bookmarking
 
-You can save the state of your viewer to a JSON bookmark, which captures the complete runtime state of your viewer. When you
-load the bookmark again (perhaps even into a different viewer), it will exactly restore the viewer to that state.
+You can save your viewer to a JSON bookmark, which captures the complete runtime state of your viewer. You can then  
+load that bookmark \(perhaps even into a different viewer\), to exactly restore the viewer to that runtime state.
 
 The bookmark will save everything, including:
 
@@ -13,7 +13,7 @@ The bookmark will save everything, including:
 
 ### Example
 
-To show how bookmarking works, we'll reuse the example from *[Introduction](README.md)*. In this example, we're
+To show how bookmarking works, we'll reuse the example from [_Introduction_](README.md). In this example, we're  
 positioning the camera, loading a model, rotating the model, and making some objects transparent, to reveal the insides.
 
 ```javascript
@@ -34,46 +34,45 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 
 With our model loaded and everything looking awesome, we'll now save our viewer to a bookmark:
 
-
-````javascript
+```javascript
 var bookmark = viewer.getBookmark();
-````
+```
 
 Our bookmark will look this:
 
-````JSON
+```JSON
 {
-	"models": [
-		{
-			"id": "saw",
-			"src": "./ReciprocatingSaw.gltf",
-			"rotate": [90,0,0]
-		}
-	],
-	"objects": [
-		{
-			"id": "saw#3.1",
-			"opacity": 0.5
-		},
-		{
-        	"id": "saw#3.2",
-        	"opacity": 0.5
-       	}
-	],
-	"lookat": {
-		"eye": [-130, -40, 350],
-		"look": [-130, -40, 0]
-	}
+    "models": [
+        {
+            "id": "saw",
+            "src": "./ReciprocatingSaw.gltf",
+            "rotate": [90,0,0]
+        }
+    ],
+    "objects": [
+        {
+            "id": "saw#3.1",
+            "opacity": 0.5
+        },
+        {
+            "id": "saw#3.2",
+            "opacity": 0.5
+           }
+    ],
+    "lookat": {
+        "eye": [-130, -40, 350],
+        "look": [-130, -40, 0]
+    }
 }
-````
+```
 
-For compactness, a bookmark only saves viewer state that differs from the defaults. Therefore, our bookmark only contains
-the updates that we programmed, such as the camera position, the model we loaded, its rotation, and the two objects that
+For compactness, a bookmark only saves viewer state that differs from the defaults. Therefore, our bookmark only contains  
+the updates that we programmed, such as the camera position, the model we loaded, its rotation, and the two objects that  
 we made transparent.
 
 #### Loading a bookmark
 
-We can now load the bookmark back into our viewer, or into a different viewer, to restore the scene that we created
+We can now load the bookmark back into our viewer, or into a different viewer, to restore the scene that we created  
 programmatically earlier:
 
 ```javascript
@@ -84,3 +83,4 @@ viewer2.setBookmark(bookmark, function() { /* Loaded */ });
 ```
 
 Note that when loading a bookmark, the viewer must be able to load the models that are listed in the bookmark.
+
