@@ -24,7 +24,7 @@ Annotations are completely editable through the viewer API. You can move them to
 
 ### Examples
 
-In the example below, we'll position the camera and load a glTF model of a reciprocating saw. When the model has loaded, we'll rotate it so that we can see it from the side. Then we'll hide a couple of cover objects so that we can see the armature bearing, which is normally hidden inside the cover. Finally, we'll create annotations on the armature bearing and one of the bearing enclosures. We'll configure our annotations to show their pins and labels, and to be hidden whenever their pins are hidden behind objects in the 3D view.
+In the example below, we'll position the camera and load a glTF model of a reciprocating saw. When the model has loaded, we'll rotate it so that we can see it from the side. Then we'll hide a couple of cover objects so that we can see the armature bearing, which is normally hidden inside the cover. Finally, we'll create annotations on the armature bearing and one of the bearing enclosures. We'll also configure our annotations to show their pins and labels, and to be hidden whenever their pins are occluded by objects in the 3D view.
 
 ```javascript
 var viewer = new xeometry.Viewer();
