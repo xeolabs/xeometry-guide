@@ -2,7 +2,7 @@
 
 A viewer has a single camera that you can move around the scene.
 
-A camera position is represented with three World-space vectors:
+A camera position is represented by three World-space vectors:
 
 * _eye_ - the position of your eye,
 * _look_ - the position of the point you're looking at
@@ -23,8 +23,6 @@ var up = viewer.getUp();
 ```
 
 The xeometry viewer also provides various convenience methods to move the camera
-
-
 
 The camera projection can be either
 
