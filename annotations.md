@@ -1,6 +1,6 @@
 # Annotations
 
-Annotations are labels that you can pin to the surface of the objects in your viewer.
+Annotations are labels that you can pin on the objects in your viewer.
 
 An annotation is pinned within a triangle belonging to its object's geometry. The object is indicated by ID, the triangle is indicated by the index of its first element within the geometry's indices array, and the position within the triangle is indicated using barycentric coordinates. See [_Querying Geometry_](queryingGeometry.md) for more information on object geometries.
 
