@@ -8,7 +8,7 @@ Each annotation is displayed as pin, which contains a 1-2 character string, call
 
 By default, an annotation's pin and label will become invisible whenever the pin is occluded by other objects in the 3D view. This is called _occlusion culling_ and you can disable that for each annotation individually, whenever you need them to remain visible when behind or inside things.
 
-An annotation can be configured with a suggested camera position from which to view it. This is optional, and is given as camera _eye_, _look_ and _up_ vectors \(see [_Controlling the camera_](controllingTheCamera.md)\_\).
+An annotation can be configured with a suggested camera position from which to view it. This is optional, and is given as camera _eye_, _look_ and _up_ vectors \(see [_Controlling the camera_](controllingTheCamera.md)\).
 
 ### Example
 
