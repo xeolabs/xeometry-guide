@@ -11,7 +11,7 @@ Things you can do through the xeometry API:
 * Assign types \(eg. IFC\) to objects, so that the types can be used instead of IDs when when specifying objects to viewer methods - see [_Assigning types to objects_](assigningTypesToObjects.md)
 * Animate the camera - see [_Controlling the camera_](controllingTheCamera.md)_, _[_Panning the camera_](panningTheCamera.md)_, _[_Rotating the camera_](rotatingTheCamera.md)_, _[_Zooming the camera_](zoomingTheCamera.md)_ and _[_Camera projections_](cameraProjections.md)
 * Move camera to fit objects in view - see [_Fitting things in view_](fittingThingsInView.md)
-* Create annotations - see [_Annotations_](annotations.md)
+* Create annotations on objects - see [_Annotations_](annotations.md)
 * Create custom clipping planes - see [_Clipping_](clipping.md)
 * Create light sources - see [_Creating light sources_](creatingLightSources.md)
 * Draw outlines around objects to emphasise them - see [_Outlining_](outlining.md)
