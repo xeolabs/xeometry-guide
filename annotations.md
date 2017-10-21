@@ -4,7 +4,7 @@ Annotations are labels that you can pin on the objects in your viewer.
 
 Each annotation is displayed as pin, which contains a 1-2 character string, called a "glyph", and a label attached to the pin, which contains a title and a description. You can show and hide the pin and label independently.
 
-#### Position
+#### Positioning
 
 An annotation's pin is positioned within a triangle of its object's geometry. The object is indicated by its ID, the triangle is indicated by the index of its first element within the geometry indices array, and the position within the triangle is indicated using barycentric coordinates. See [_Querying Geometry_](queryingGeometry.md) for more information on object geometries.
 
@@ -18,13 +18,13 @@ An annotation can be configured with a suggested camera position from which to v
 
 #### Customizing appearance
 
-Annotations are rendered as HTML elements and have CSS rules that you  can redefine to customize their appearance. As a guide, refer to their [default CSS stylesheet](https://github.com/xeolabs/xeometry/blob/master/libs/xeogl/annotations/annotation-style.js). 
+Annotations are rendered as HTML elements and have CSS rules that you  can redefine to customize their appearance. As a guide, refer to their [default CSS stylesheet](https://github.com/xeolabs/xeometry/blob/master/libs/xeogl/annotations/annotation-style.js).
 
-Annotations are completely editable through the viewer API. You can move them to different objects and triangles, edit their labels, and so on. 
+Annotations are completely editable through the viewer API. You can move them to different objects and triangles, edit their labels, and so on.
 
 ### Examples
 
-In the example below, we'll position the camera and load a glTF model of a reciprocating saw. When the model has loaded, we'll rotate it so that we can see it from the side. Then we'll hide a couple of cover objects so that we can see the armature bearing, which is normally hidden inside the cover. Finally, we'll create annotations on the armature bearing and one of the bearing enclosures.
+In the example below, we'll position the camera and load a glTF model of a reciprocating saw. When the model has loaded, we'll rotate it so that we can see it from the side. Then we'll hide a couple of cover objects so that we can see the armature bearing, which is normally hidden inside the cover. Finally, we'll create annotations on the armature bearing and one of the bearing enclosures. We'll configure our annotations to show their pins and labels, and to be hidden whenever their pins are hidden behind objects in the 3D view.
 
 ```javascript
 var viewer = new xeometry.Viewer();
