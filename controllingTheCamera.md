@@ -20,7 +20,7 @@ viewer.setLook([0,0,0]);
 viewer.setUp([0,1,0]);
 ```
 
-Setting _eye_, _look_ and _up_ in one call:
+Setting _eye_, _look_ and _up_ in one shot:
 
 ```javascript
 // Eye, look and "up" vector
