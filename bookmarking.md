@@ -1,9 +1,7 @@
 # Bookmarking
 
 You can save your viewer to a JSON bookmark, which captures the complete runtime state of your viewer. You can then  
-load that bookmark \(perhaps even into a different viewer\), to exactly restore the viewer to that runtime state.
-
-Within the xeometry implementation, this 
+load that bookmark \(perhaps even into a different viewer\), to exactly restore the viewer to that state.
 
 The bookmark will save everything, including:
 
