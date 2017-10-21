@@ -2,6 +2,8 @@
 
 #### Annotation
 
+A label that you pin to the surface of an object.
+
 #### BIM
 
 #### Bookmark
