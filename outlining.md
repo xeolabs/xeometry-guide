@@ -31,7 +31,7 @@ viewer.hideOutline();
 viewer.showOutline("saw");
 ```
 
-Outlining the given types \(see [_Assigning types to objects_](assigningTypesToObjects.md)\):
+Outlining all objects of the given types \(see [_Assigning types to objects_](assigningTypesToObjects.md)\):
 
 ```javascript
 viewer.hideOutline();
