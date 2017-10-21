@@ -1,12 +1,14 @@
 # Annotations
 
-An annotation is a label that you can pin to the surface of an object.
+An annotation is a label that you pin to the surface of an object.
 
-An annotation is located at barycentric coordinates inside a triangle within the geometry of its object.
+An annotation is pinned within a triangle belonging to its object's geometry. The object is indicated by ID, the triangle is indicated by the index of its first element within the geometry's indices array, and the position within the triangle is indicated using barycentric coordinates. See [_Querying Geometry_](queryingGeometry.md) for more information on object geometries.
 
-An annotation can be configured with an suggested camera position from which to view it.
+Each annotation is displayed as pin, which contains a 1-2 character string, called a "glyph", and a label attached to the pin, which contains a title and a description. The pin and label can be shown and hidden independently. 
 
-By default, an annotation will become invisible while occluded by other objects in the 3D view.
+By default, an annotation's pin and label will become invisible whenever the pin is occluded by other objects in the 3D view. This is called *occlusion culling* and you can disable that for each annotation individually, whenever you need them to remain visible when behind or inside things.
+
+An annotation can be configured with an suggested camera position from which to view it. This is optional, and is given as camera *eye*, *look* and *up* vectors (see [_Controlling the camera_](controllingTheCamera.md)_). 
 
 ### Example
 
