@@ -12,7 +12,7 @@ You can set and get those directly, to manage the camera position.
 
 ### Examples
 
-Setting the camera position:
+Setting the camera position by setting _eye_, _look_ and _up_ separately:
 
 ```javascript
 viewer.setEye([0,0,-100]);
@@ -20,12 +20,21 @@ viewer.setLook([0,0,0]);
 viewer.setUp([0,1,0]);
 ```
 
+Setting _eye_, _look_ and _up_ in one call:
+
+```javascript
+// Eye, look and "up" vector
+viewer.setEyeLookUp([0,0,-100],[0,0,0],[0,1,0], function() {
+    // Camera arrived
+});
+```
+
 Getting the camera position:
 
 ```javascript
 var eye = viewer.getEye();
 var look = viewer.getLook();
-var up = viewer.getUp(); 
+var up = viewer.getUp();
 ```
 
 
