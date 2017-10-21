@@ -2,7 +2,7 @@
 
 You can rotate the camera about the _eye_ position, to look around in first-person fashion, or about the _look_ position, to orbit the point you're looking at.
 
-Vertical rotation is gimbal-locked to the World-space Y-axis by default. You can disable that to make the camera pivot about its `up` vector, for more of a trackball type rotation.
+Vertical rotation is gimbal-locked to the World-space Y-axis by default. You can disable that to make the camera pivot about its _up_ vector, for more of a trackball type rotation.
 
 ### Examples
 
