@@ -8,9 +8,11 @@ A label that you pin to the surface of an object.
 
 #### Bookmark
 
+A JSON object that captures the runtime state of a viewer. 
+
 #### Boundary
 
-#### Canvas Coordinate Space
+#### Canvas Space
 
 #### Clipping
 
