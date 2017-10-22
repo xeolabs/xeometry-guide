@@ -2,7 +2,7 @@
 
 [**xeometry**](http://xeolabs.com/xeometry)** is an open source JavaScript API for viewing glTF models on WebGL.**
 
-A xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) is a single class that wraps the [xeogl](http://xeogl.org) 3D engine in a set of simple data-driven methods that focus on loading glTF models and manipulating scene elements to create cool 3D presentations. 
+A xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) is a single class that wraps the [xeogl](http://xeogl.org) 3D engine in a set of simple data-driven methods that focus on loading glTF models and manipulating scene elements to create cool 3D presentations.
 
 The example below shows the gist of how to use xeometry. In this example, we're creating a viewer, positioning its camera, loading a model of a reciprocating saw, rotating the model so we can see it from the side, then making the handle objects transparent, to reveal the inner workings.
 
@@ -32,6 +32,8 @@ We can then load that bookmark again, perhaps even into a different viewer insta
 var viewer2 = new xeometry.Viewer();
 viewer2.setBookmark(bookmark, function() { /* Loaded */ });
 ```
+
+So that's the general idea: a viewer API that lets you dynamically reach into your static glTF models and tweak their bits and pieces, while being totally data-driven,  which lets you save and load your changes. Think of it as a sort of programmatic SketchFab.  Maybe use it as the viewer component within your next  
 
 See [Features](/features.md) for an overview of all the things that you can do through the xeometry API.
 
