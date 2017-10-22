@@ -2,7 +2,7 @@
 
 ## xeometry
 
-* [README](README.md)
+* [Welcome](README.md)
 * [Introduction](introduction.md)
 * [Features](features.md)
 
@@ -54,6 +54,4 @@
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
 * Creating input controls
-
-
 
