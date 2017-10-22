@@ -6,7 +6,7 @@
 * [Introduction](introduction.md)
 * [Features](features.md)
 
-## Getting started
+## Getting Started
 
 * [Creating a Viewer](creatingAViewer.md)
 * [Loading Models](loadingModels.md)
@@ -54,4 +54,6 @@
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
 * Creating input controls
+
+
 
