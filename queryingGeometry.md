@@ -7,7 +7,7 @@ A geometry consists of:
 * a primitive type \(_"points", "lines", "line-loop", "line-strip", "triangles", "triangle-strip"_ or _"triangle-fan"\),_
 * an array of World-space vertex positions \(_Float32Array_\),
 * an array of tangent-space vertex normal vectors \(_Float32Array_\), and
-* an array of indices \(_Int16Array_ or _Int32Array_\), which index the vertex arrays to form primitives.
+* an array of indices \(_Int16Array_ or _Int32Array_\), which index the vertex arrays to form primitives[^1].
 
 ### Examples
 
@@ -45,4 +45,6 @@ var aabb = viewer.getAABB("saw#43");
 ```
 
 Note that the extents of this boundary will change whenever we transform the object \(see [_Transforming_](transforming.md)\).
+
+[^1]: The primitive type indicates the layout of the indices array - see [The OpenGL Wiki](https://www.khronos.org/opengl/wiki/Primitive) for more information.
 
