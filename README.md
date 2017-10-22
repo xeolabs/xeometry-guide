@@ -33,7 +33,7 @@ var viewer2 = new xeometry.Viewer();
 viewer2.setBookmark(bookmark, function() { /* Loaded */ });
 ```
 
-So that's the general idea: a viewer API that lets you dynamically reach into your static glTF models and tweak their bits and pieces, while being totally data-driven,  which lets you save and load your changes. Think of it as a sort of programmatic SketchFab.  Maybe use it as the viewer component within your next  
+So that's the general idea: xeometry is a viewer API that lets you reach into your static glTF models and dynamically tweak their bits and pieces, while being totally data-driven,  which lets you save and load your changes. Think of it as a sort of programmatic SketchFab.  Maybe use it as the viewer component within your next
 
 See [Features](/features.md) for an overview of all the things that you can do through the xeometry API.
 
