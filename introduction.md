@@ -20,7 +20,7 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 
 [![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
-Once everything's looking the way we want it, we can save the viewer to a JSON bookmark.
+Once everything's looking the way we want it to, we can save the viewer to a JSON bookmark.
 
 ```javascript
 var bookmark = viewer.getBookmark();
