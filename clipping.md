@@ -1,8 +1,6 @@
 # Clipping
 
-You can create custom clipping planes in your viewer, to slice open your models so that you can see inside them. 
-
-Clipping planes You can also mask which objects are clipped by them.
+When you need to look inside your models, you can slice them open with custom clipping planes. These are defined in World space, as a 3D position and a direction vector. Everything that falls in front of that position, in the direction of the vector, will not be rendered, unless configured unclippable.
 
 ### Example
 
