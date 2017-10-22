@@ -1,7 +1,8 @@
 # Clipping
 
-You can create an unlimited number of arbitrarily-positioned clipping planes in your viewer. You can also mask which  
-objects are clipped by them.
+You can create custom clipping planes in your viewer, to slice open your models so that you can see inside them. 
+
+Clipping planes You can also mask which objects are clipped by them.
 
 ### Example
 
