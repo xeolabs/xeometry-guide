@@ -2,13 +2,13 @@
 
 The camera can be panned on three axis:
 
-* horizontally, along its local horizontal axis, which runs perpendicular to its _eye_->_look_ and _up_ vectors, 
+* horizontally, along its local horizontal axis, which runs perpendicular to its _eye_-&gt;_look_ and _up_ vectors, 
 * vertically, along its _up_ axis, and 
-* forwards and backwards, along its _eye_->_look_ axis.
+* forwards and backwards, along its _eye_-&gt;_look_ axis.
 
 Panning translates _eye_ and _look_ in unison, and does not affect _up_.
 
-Panning offsets are incremental, ie. relative to the camera's current position. 
+Panning offsets are incremental, ie. relative to the camera's current position.
 
 ### Examples
 
