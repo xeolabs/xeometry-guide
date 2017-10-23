@@ -1,8 +1,10 @@
 # Panning the Camera
 
-You can pan the camera along its local axis.
+The camera can be panned on three axis:
 
-The camera's horizontal panning is along its local horizontal axis, which runs perpendicular to its _eye_->_look_ and _up_ vectors, its vertical panning is along its _up_ axis, and its forward and back panning is along its _eye_->_look_ axis.
+* horizontally, along its local horizontal axis, which runs perpendicular to its _eye_->_look_ and _up_ vectors, 
+* vertically, along its _up_ axis, and 
+* forwards and backwards, along its _eye_->_look_ axis.
 
 Panning translates _eye_ and _look_ in unison, and does not affect _up_.
 
