@@ -1,6 +1,8 @@
 # Rotating the Camera
 
-As described in [_Controlling the camera_](controllingTheCamera.md), a camera's position is given as _eye_ and _look_ positions and an _up_ vector. To perform a first-person rotation, you can rotate the camera's _look_ position and _up_ vector around _eye_. To orbit something, you can rotate the _eye_ position and _up_ vector around _look_.
+As described in [_Controlling the camera_](controllingTheCamera.md), a camera's position is given as _eye_ and _look_ positions and an _up_ vector. 
+
+To perform a first-person rotation, xeometry rotates the camera's _look_ position and _up_ vector around _eye_.  Conversely, to orbit something, it rotates the _eye_ position and _up_ vector around _look_.
 
 The camera's pitch rotation is about its local horizontal axis, which runs perpendicular to its _eye_->_look_ and _up_ vectors, and its roll rotation is about its _eye_->_look_ axis.
 
