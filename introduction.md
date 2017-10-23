@@ -33,7 +33,7 @@ var viewer2 = new xeometry.Viewer();
 viewer2.setBookmark(bookmark, function() { /* Loaded */ });
 ```
 
-So that's the general idea of xeometry: a complete viewer API that lets you delve into your glTF models and dynamically tweak bits and pieces, while being totally data-driven,  which lets you save and load your changes. 
+So that's the general idea of xeometry: a complete viewer API that lets you delve into your glTF models and dynamically tweak bits and pieces, while being totally data-driven,  which lets you save and load your changes.
 
-See [Features](/features.md) for an overview of all the things that you can do through the xeometry API.
+See [Features](/features.md) for an overview of the things that you can do through the xeometry API.
 
