@@ -1,6 +1,6 @@
 # Zooming the Camera
- 
-Zooming the camera changes the distance of its _eye_ position from _look_ position.
+
+Zooming the camera changes the distance of its _eye_ position from its _look_ position.
 
 ### Examples
 
