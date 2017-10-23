@@ -37,16 +37,10 @@
 * [Outlining](outlining.md)
 * [Annotations](annotations.md)
 
-## Picking
-
-* [Picking](picking.md)
-
-## Bookmarking
-
-* [Bookmarking](bookmarking.md)
-
 ## Tools
 
+* [Picking](picking.md)
+* [Bookmarking](bookmarking.md)
 * [Canvas Snapshots](canvasSnapshots.md)
 
 ## Appendix
