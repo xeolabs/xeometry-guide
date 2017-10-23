@@ -1,6 +1,6 @@
 # Assigning types to objects
 
-Each object in your xeometry viewer may be optionally assigned a type. Types are strings that mean something within the domain of your application. When using xeometry as an IFC viewer, for example, then types would likely be IFC element types.
+Each object in your xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) may be optionally assigned a type. Types are strings that mean something within the domain of your application. When using xeometry as an IFC viewer, for example, then types would likely be IFC element types.
 
 When you have assigned types to your objects, then you can specify types as the targets for various xeometry methods.
 

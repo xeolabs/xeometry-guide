@@ -1,6 +1,6 @@
 # Visibility
 
-You can independently show and hide each object in your xeometry viewer.
+You can independently show and hide each object in your xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer).
 
 ### Example
 

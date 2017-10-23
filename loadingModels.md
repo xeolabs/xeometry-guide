@@ -1,6 +1,6 @@
 # Loading Models
 
-glTF models are xeometry's unit of content. You can load multiple models into a viewer at the same time, as well as multiple copies of the same models. You can then manipulate the appearance of each model as a unit, or manipulate each of its objects individually.
+glTF models are xeometry's unit of content. You can load multiple models into a [Viewer](http://xeolabs.com/xeometry/docs/#viewer) at the same time, as well as multiple copies of the same models. You can then manipulate the appearance of each model as a unit, or manipulate each of its objects individually.
 
 xeometry only loads glTF 2.0 geometries, materials and transforms. It does not \(yet\) load animations, cameras or lights.
 
