@@ -20,7 +20,7 @@
 
 ## Camera
 
-* [Controlling the Camera](controllingTheCamera.md)
+* [Camera Position](controllingTheCamera.md)
 * [Fitting Things in View](fittingThingsInView.md)
 * [Panning the Camera](panningTheCamera.md)
 * [Rotating the Camera](rotatingTheCamera.md)

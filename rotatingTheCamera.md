@@ -1,14 +1,14 @@
 # Rotating the Camera
 
-As described in [_Controlling the camera_](controllingTheCamera.md), a camera's position is given as _eye_ and _look_ positions and an _up_ vector. 
+To perform a first-person rotation, xeometry rotates the camera's _look_ and _up_ around _eye_.  To orbit the point you're look at, it rotates _eye_ and _up_ around _look_.
 
-To perform a first-person rotation, xeometry rotates the camera's _look_ position and _up_ vector around _eye_.  Conversely, to orbit something, it rotates the _eye_ position and _up_ vector around _look_.
+The camera's pitch rotation is around its local horizontal axis, which is perpendicular to its _eye_->_look_ and _up_ vectors. Its roll rotation is around its _eye_->_look_ vector.
 
-The camera's pitch rotation is about its local horizontal axis, which runs perpendicular to its _eye_->_look_ and _up_ vectors, and its roll rotation is about its _eye_->_look_ axis.
+The camera is gimbal-locked by default. This means that its yaw rotation spins around the World-space Y-axis. This is helpful to avoid disorientation and makes the rotation easier to control with the mouse. When you disable gimbal lock, the camera's yaw rotation spins around its _up_ vector, which allows it to rotate freely, like a trackball.
 
-By default, the camera is gimbal-locked, which makes its yaw rotation pivot around the World-space Y-axis. This is helpful to avoid disorientation. When gimbal lock is disabled, the camera pivots about its local vertical axis, which runs along the camera's _up_ vector.
+Rotation degrees are incremental, ie. relative to the camera's current position. 
 
-Rotation degrees are incremental, ie. relative to the camera's current position. As you rotate, translate and pan the camera, the only state that it retains is its current _eye_, _look_ and _up_ properties. 
+> Note that as you rotate, translate and pan the camera, the only state that xeometry remembers is the camera's current _eye_, _look_ and _up_ values (ie. it doesn't remember any rotation angles).  
 
 ### Examples
 

@@ -6,7 +6,7 @@ The camera's horizontal panning is along its local horizontal axis, which runs p
 
 Panning translates _eye_ and _look_ in unison, and does not affect _up_.
 
-Panning offsets are incremental, ie. relative to the camera's current position. As you rotate, translate and pan the camera, the only state that it retains is its current _eye_, _look_ and _up_ properties. 
+Panning offsets are incremental, ie. relative to the camera's current position. 
 
 ### Examples
 
