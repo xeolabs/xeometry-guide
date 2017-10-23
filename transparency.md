@@ -1,6 +1,6 @@
 # Transparency
 
-You can make objects transparent, to reveal other objects behind or inside them.
+You can make objects in your viewer transparent, to reveal other objects behind or inside them.
 
 ### Example
 

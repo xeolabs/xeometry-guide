@@ -1,7 +1,8 @@
 ## Transforming
 
-You can independently transform each model and object in your viewer. A transform consists of the following operations,  
-applied in this order:
+You can independently transform each model and object in your viewer. 
+
+A transform consists of the following operations, applied in this order:
 
 1. scale
 2. X-axis rotation \(degrees\),
