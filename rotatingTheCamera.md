@@ -1,6 +1,6 @@
 # Rotating the Camera
 
-To perform a first-person rotation, you rotate the camera's _look_ and _up_ around _eye_.  To orbit the point you're look at, you need to rotate _eye_ and _up_ around _look_.
+To perform a first-person rotation, you rotate the your camera's _look_ and _up_ around _eye_.  To orbit the point you're look at, you need to rotate _eye_ and _up_ around _look_.
 
 The camera's pitch rotation is around its local horizontal axis, which is perpendicular to its _eye_-&gt;_look_ and _up_ vectors. Its roll rotation is around its _eye_-&gt;_look_ vector.
 

@@ -1,6 +1,6 @@
 # Panning the Camera
 
-The camera can be panned on three axis:
+A xeometry viewer's camera can be panned on three axis:
 
 * horizontally, along its local horizontal axis, which runs perpendicular to its _eye_-&gt;_look_ and _up_ vectors, 
 * vertically, along its _up_ axis, and 
