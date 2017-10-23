@@ -1,6 +1,6 @@
 # Camera Projections
 
-You can switch the camera between perspective and orthographic projection at any time.
+You can switch the camera between perspective and orthographic projections at any time.
 
 ### Examples
 
