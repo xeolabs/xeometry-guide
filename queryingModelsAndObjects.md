@@ -1,6 +1,6 @@
 # Querying Models and Objects
 
-This page describes how to find the IDs of the models and objects that you have loaded in your viewer. You can then use those IDs to access properties of the models and objects, to do things like [query their boundaries](queryingBoundaries.md) or [set their visibilities](visibility.md).
+This page describes how to find the IDs of the models and objects that you have loaded in your xeometry viewer. You can then use those IDs to access properties of the models and objects, to do things like [query their boundaries](queryingBoundaries.md) or [set their visibilities](visibility.md).
 
 As described in [_Loading Models_](loadingModels.md), when we load a model, we assign it a unique ID. Each object loaded in the model also gets a unique ID that's prefixed by the model's ID, Eg. _"&lt;model ID&gt;\#&lt;object ID&gt;"_. This lets us load multiple copies of the same models, without getting ID conflicts between the objects.
 
