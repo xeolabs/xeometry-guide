@@ -1,6 +1,6 @@
 # Controlling the Camera
 
-A viewer has a camera that you can move around the scene.
+A xeometry viewer has a camera that you can move around the scene.
 
 The camera's position is represented by three World-space vectors:
 
@@ -8,7 +8,7 @@ The camera's position is represented by three World-space vectors:
 * _look_ - the point you're looking at
 * _up_ - the direction of "up"
 
-Set and get those properties to manage the camera position. 
+Set and get those properties to manage the camera position.
 
 > Note that these properties are the only state that xeometry tracks for the camera position. In other words, as you rotate, pan and zoom the camera, xeometry does not remember your rotation angles or translation offsets.
 
