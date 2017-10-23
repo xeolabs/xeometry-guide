@@ -1,6 +1,6 @@
 # Querying Boundaries
 
-Each model and object in a viewer has a boundary, which you can query at any time.
+Each model and object in a xeometry viewer has a boundary, which you can query at any time.
 
 A boundary is an axis-aligned bounding box \(_AABB\)_ in World space. It's represented as an array containing the boundary's minimum and maximum extents on each World-space axis:
 
