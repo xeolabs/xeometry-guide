@@ -19,14 +19,13 @@ Types 1 and 3 just return the ID of the picked object.
  * normal vector, and
  * UV coordinates.
 
-Note that we'll only get a normal if the object's geometry has normals, and UV coordinates if the
-geometry has UVs. xeometry finds the values for these by interpolating within the values for the triangle vertices using
-the barycentric coordinates.
+Note that we'll only get a normal if the object's geometry has normals, and UV coordinates if the geometry has UVs. xeometry finds the values for these by interpolating within the values for the triangle vertices using the barycentric coordinates.
 
 ## Picking an object at canvas coordinates
 
-This type of picking is the simplest: we pick the closest object behind the given canvas coordinates. This is equivalent to
-firing a ray through the canvas, down the negative Z-axis, to find the first object it hits.
+This type of picking is the simplest: we pick the closest object behind the given canvas coordinates. This is equivalent to firing a ray through the canvas, down the negative Z-axis, to find the first object it hits.
+
+![](/assets/pickingCanvasEntity.gif)
 
 **Example:** Draw outline around each clicked object (see [Outlining Objects](outlining.md)):
 
