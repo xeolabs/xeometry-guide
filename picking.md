@@ -65,8 +65,9 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 
 ## Picking point on object surface at canvas coords
 
-Like the previous type of picking, this one also picks the closest object behind the given canvas coordinates, but also
-gets geometric information about the point on the object's surface that lies right behind those canvas coordinates.
+Like the previous type of picking, this one also picks the closest object behind the given canvas coordinates, but also gets geometric information about the point on the object's surface that lies right behind those canvas coordinates.
+
+![](/assets/pickingCanvasEntitySurface.gif)
 
 **Example:** Annotate an object by clicking it (see [Creating Annotations](annotations.md)):
 
