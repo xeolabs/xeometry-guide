@@ -10,7 +10,8 @@ xeometry supports four types of picking:
  2. pick point on object surface with World-space ray.
 
 Types 1 and 3 just return the ID of the picked object.
-<br><br>Types 2 and 4 return the picked object, as well as information about the surface intersection, which includes:
+
+Types 2 and 4 return the picked object, as well as information about the surface intersection, which includes:
 
  * the triangle,
  * barycentric coordinates within the triangle,
@@ -20,6 +21,8 @@ Types 1 and 3 just return the ID of the picked object.
  * UV coordinates.
 
 Note that we'll only get a normal if the object's geometry has normals, and UV coordinates if the geometry has UVs. xeometry finds the values for these by interpolating within the values for the triangle vertices using the barycentric coordinates.
+
+> **_Under the hood:_** in case you're curious about how picking is implemented in xeometry, take a look at this article which explains the picking algorithms used in xeogl (xeometry's underlying WebGL engine): http://xeolabs.com/articles/xeogl-picking
 
 ## Picking an object at canvas coordinates
 
