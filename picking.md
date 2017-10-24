@@ -97,8 +97,10 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 
 For this type of picking, xeometry fires a ray through the scene, in World-space, to pick the first entity it hits.
 
-**Example:** Fire a ray through World space to outline the first object that intersects it (see [Outlining Objects](outlining.md)):
+![](http://xeolabs.com/images/xeogl/pickingRaycastEntity.gif)
 
+#### Example
+Firing a ray through World space to outline the first object that intersects it (see [Outlining Objects](outlining.md)):
 ```javascript
 var hit = viewer.rayCastObject([0,0,-100], [0,0,1]); // Origin, dir
 if (hit) {
@@ -109,9 +111,9 @@ if (hit) {
 
 ## Pick point on object surface with World-space ray
 
-Like the previous type of picking, this one also involves firing a ray through the scene in World-space, to pick an object,
-but this time we're also getting geometric information about the intersection of the ray with the entity surface.
+Like the previous type of picking, this one also involves firing a ray through the scene in World-space, to pick an object, but this time we're also getting geometric information about the intersection of the ray with the entity surface.
 
+![](http://xeolabs.com/images/xeogl/pickingRaycastEntitySurface.gif)
 **Example:** Getting object and surface intersection with a World-space ray:
 
 ```javascript
