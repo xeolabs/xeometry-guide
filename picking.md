@@ -1,6 +1,6 @@
 # Picking
 
-![](assets/pickingObjects.png)
+![](assets/pickingTeapots.png)
 
 xeometry supports four types of picking:
 
