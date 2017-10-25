@@ -30,6 +30,8 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 
 [![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
 
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_transparency) \]
+
 #### Saving a bookmark
 
 With our model loaded and everything looking awesome, we'll now save our viewer to a bookmark:
