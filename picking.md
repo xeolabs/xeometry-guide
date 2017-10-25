@@ -28,7 +28,7 @@ Note that we'll only get a normal if the object's geometry has normals, and UV c
 
 This type of picking is the simplest: we pick the closest object behind the given canvas coordinates. This is equivalent to firing a ray through the canvas, down the negative Z-axis, to find the first object it hits.
 
-![](/assets/pickingCanvasEntity.gif)
+![](/assets/giphy %2818%29.gif)
 
 **Example:** Draw outline around each clicked object \(see [Outlining Objects](outlining.md)\):
 
@@ -70,7 +70,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 
 Like the previous type of picking, this one also picks the closest object behind the given canvas coordinates, but also gets geometric information about the point on the object's surface that lies right behind those canvas coordinates.
 
-![](/assets/pickingCanvasEntitySurface.gif)
+![](/assets/giphy %2820%29.gif)
 
 **Example:** Annotate an object by clicking it \(see [Creating Annotations](annotations.md)\):
 
@@ -100,7 +100,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 
 For this type of picking, xeometry fires a ray through the scene, in World-space, to pick the first entity it hits.
 
-![](http://xeolabs.com/images/xeogl/pickingRaycastEntity.gif)
+![](https://media.giphy.com/media/3ov9jI86K9NvQMxIzu/giphy.gif)
 
 #### Example
 
@@ -118,7 +118,7 @@ if (hit) {
 
 Like the previous type of picking, this one also involves firing a ray through the scene in World-space, to pick an object, but this time we're also getting geometric information about the intersection of the ray with the entity surface.
 
-![](http://xeolabs.com/images/xeogl/pickingRaycastEntitySurface.gif)  
+![](/assets/giphy %2816%29.gif)  
 **Example:** Getting object and surface intersection with a World-space ray:
 
 ```javascript
