@@ -1,5 +1,7 @@
 # Picking
 
+TODO: definition of picking
+
 ![](assets/pickingTeapots.png)
 
 xeometry supports four types of picking:
