@@ -30,5 +30,5 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ```
 
-[![](/assets/Screenshot from 2017-10-25 23-25-13.png)](http://xeolabs.com/xeometry/examples/#guidebook_clipping)
+[![](/assets/clipPlanes3.jpeg)](http://xeolabs.com/xeometry/examples/#guidebook_clipping)
 
