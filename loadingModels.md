@@ -36,8 +36,6 @@ viewer.loadModel("gearbox", "./GearboxAssy.gltf", function () {
 
 \[ [Run demo](http://xeolabs.com/xeometry/examples/#loading_loadTwoModels) \]
 
-
-
 Loading two copies of the same model into a viewer:
 
 ```javascript
@@ -51,6 +49,8 @@ viewer.loadModel("saw2", "./Reciprocating_Saw.gltf",  function () {
 ```
 
 [![](assets/loadSameModelTwice.png)](http://xeolabs.com/xeometry/examples/#loading_sameModelTwice)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#loading_loadTwoModels) \]
 
 Unloading a model:
 
