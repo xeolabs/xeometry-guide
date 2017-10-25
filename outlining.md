@@ -2,7 +2,7 @@
 
 You can emphasize objects in your viewer by showing outlines around them.
 
-> This is currently implemented using the stencil buffer technique, in which a halo is rendered by drawing a glowing copy of the mesh in the background, expanded along its vertex normals. This doesn't work so well for non-smooth vertex normals though, so will be probably be replaced by some sort of post-processing edge-detection technique at some point.
+> _**Under the hood: **This is currently implemented using the stencil buffer technique, in which a halo is rendered by drawing a glowing copy of the mesh in the background, expanded along its vertex normals. This doesn't work so well for non-smooth vertex normals though, so will be probably be replaced by some sort of post-processing edge-detection technique at some point._
 
 ### Example
 
