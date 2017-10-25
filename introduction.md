@@ -1,7 +1,5 @@
 # Introduction
 
-xeometry is an open source JavaScript API for interactively viewing glTF models on WebGL.
-
 A xeometry [Viewer](http://xeolabs.com/xeometry/docs/#viewer) is a single class that wraps the [xeogl](http://xeogl.org) 3D engine in a set of simple data-driven methods that focus on loading glTF models and manipulating scene elements to create 3D presentations. Being data-driven, the Viewer is also able to track all your scene updates, and can save and load JSON bookmarks of its runtime state.
 
 The example below shows the gist of how to use xeometry. In this example, we're creating a viewer, positioning its camera, loading a model of a reciprocating saw, rotating the model so we can see it from the side, then making the handle objects transparent, so that we can see the armature objects inside.
