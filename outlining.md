@@ -22,7 +22,9 @@ viewer.loadModel("gearbox", "GearboxAssy.gltf", function () {
 });
 ```
 
-[![](assets/outlining.png)](http://xeolabs.com/xeometry/examples/#guidebook_outlining)
+[![](assets/outlining.png)](http://xeolabs.com/xeometry/examples/#effects_outlining)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_outlining) \]
 
 ### More examples
 

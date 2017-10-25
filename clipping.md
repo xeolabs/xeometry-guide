@@ -30,5 +30,11 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ```
 
-[![](/assets/clipPlanes3.jpeg)](http://xeolabs.com/xeometry/examples/#guidebook_clipping)
+[![](/assets/clipPlanes3.jpeg)](http://xeolabs.com/xeometry/examples/#effects_clipping)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_clipping) \]
+
+
+
+
 

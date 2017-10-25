@@ -33,7 +33,11 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ```
 
-[![](assets/transforms.png)](http://xeolabs.com/xeometry/examples/#guidebook_transforming)
+[![](assets/transforms.png)](http://xeolabs.com/xeometry/examples/#effects_transforming)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_transforming) \]
+
+
 
 ### More examples
 

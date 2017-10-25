@@ -18,6 +18,8 @@ viewer.loadModel("saw", "./Reciprocating_Saw.gltf", function () {
 
 [![](assets/loadModel.png)](http://xeolabs.com/xeometry/examples/#loading_loadModel)
 
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#loading_loadModel) \]
+
 Loading two separate models into a viewer:
 
 ```javascript
@@ -31,6 +33,10 @@ viewer.loadModel("gearbox", "./GearboxAssy.gltf", function () {
 ```
 
 [![](assets/loadTwoModels.png)](http://xeolabs.com/xeometry/examples/#loading_loadTwoModels)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#loading_loadTwoModels) \]
+
+
 
 Loading two copies of the same model into a viewer:
 

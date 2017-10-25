@@ -18,9 +18,9 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ```
 
-[![](assets/visibility.png)](http://xeolabs.com/xeometry/examples/#guidebook_visibility)
+[![](assets/visibility.png)](http://xeolabs.com/xeometry/examples/#effects_visibility)
 
-\[ [Run demo](http://xeolabs.com/xeometry/examples/#guidebook_visibility) \]
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_visibility) \]
 
 ### More examples
 
