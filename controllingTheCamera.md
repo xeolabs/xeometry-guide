@@ -10,7 +10,7 @@ The camera's position is represented by three World-space vectors:
 
 Set and get those properties to manage the camera position.
 
-> Note that these properties are the only state that xeometry tracks for the camera position. In other words, as you rotate, pan and zoom the camera, xeometry does not remember your rotation angles or translation offsets.
+> _Note that these properties are the only state that xeometry tracks for the camera position. In other words, as you rotate, pan and zoom the camera, xeometry does not remember your rotation angles or translation offsets._
 
 ### Examples
 

@@ -8,7 +8,7 @@ The camera is gimbal-locked by default. This means that its yaw rotation spins a
 
 Rotation degrees are incremental, ie. relative to the camera's current position.
 
-> Recall that as you rotate, translate and pan the camera, the only state that xeometry remembers is the camera's current _eye_, _look_ and _up_ values \(ie. it doesn't remember any rotation angles\).
+> _Recall that as you rotate, translate and pan the camera, the only state that xeometry remembers is the camera's current eye, look and up values \(ie. it doesn't remember any rotation angles\)._
 
 ### Examples
 

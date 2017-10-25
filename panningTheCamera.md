@@ -14,14 +14,10 @@ Panning offsets are incremental, ie. relative to the camera's current position.
 
 Setting an initial camera position:
 
-```
+```javascript
 viewer.setEye([0, 0, -100]);
 viewer.setLook([0,  0, 0]);
 viewer.setUp([0, 1, 0]);
-
-// eye is now [0, 0, -100]
-// look is now [0, 0, 0]
-// up remains [0, 1, 0]
 ```
 
 Panning the camera five units to the left:
