@@ -10,5 +10,5 @@ It lets you load multiple models and show, hide, move, query, measure, xray, sli
 * [Downloads](https://github.com/xeolabs/xeometry/releases)
 * [Source code](https://github.com/xeolabs/xeometry)
 
-![](/assets/car.png)
+[![](/assets/clipPlanes.jpeg)](http://xeolabs.com/xeometry/examples/#effects_clipping)
 
