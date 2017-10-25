@@ -20,6 +20,8 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 
 [![](assets/visibility.png)](http://xeolabs.com/xeometry/examples/#guidebook_visibility)
 
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#guidebook_visibility) \]
+
 ### More examples
 
 Showing everything in the viewer:
