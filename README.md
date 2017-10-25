@@ -10,5 +10,7 @@ It lets you load multiple models and show, hide, move, query, measure, xray, sli
 * [Downloads](https://github.com/xeolabs/xeometry/releases)
 * [Source code](https://github.com/xeolabs/xeometry)
 
-[![](/assets/transforms2.png)](http://xeolabs.com/xeometry/examples/#effects_transforming)
+[![](/assets/transforms3.png)](http://xeolabs.com/xeometry/examples/#effects_transforming)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_transforming) \]
 
