@@ -24,7 +24,7 @@ Types 2 and 4 return the picked object, as well as information about the surface
 
 Note that we'll only get a normal if the object's geometry has normals, and UV coordinates if the geometry has UVs. xeometry finds the values for these by interpolating within the values for the triangle vertices using the barycentric coordinates.
 
-> _**Under the hood:**_ in case you're curious about how picking is implemented in xeometry, take a look at this article which explains the picking algorithms used in xeogl \(xeometry's underlying WebGL engine\): [http://xeolabs.com/articles/xeogl-picking](http://xeolabs.com/articles/xeogl-picking)
+> _**Under the hood:** this article explains the picking algorithms used in xeogl \(xeometry's underlying WebGL engine\): _[_http://xeolabs.com/articles/xeogl-picking_](http://xeolabs.com/articles/xeogl-picking)
 
 ## Picking an object at canvas coordinates
 
@@ -32,7 +32,9 @@ This type of picking is the simplest: we pick the closest object behind the give
 
 ![](/assets/giphy %2818%29.gif)
 
-**Example:** Draw outline around each clicked object \(see [Outlining Objects](outlining.md)\):
+#### **Examples**
+
+Draw outline around each clicked object \(see [Outlining Objects](outlining.md)\):
 
 ```javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -44,7 +46,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 });
 ```
 
-**Example:** Hide each clicked object \(see [Visibility](visibility.md)\):
+Hide each clicked object \(see [Visibility](visibility.md)\):
 
 ```javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -56,7 +58,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 });
 ```
 
-**Example:** Fit camera view to each clicked object \(see [Fitting Things in View](fittingThingsInView.md)\):
+Fit camera view to each clicked object \(see [Fitting Things in View](fittingThingsInView.md)\):
 
 ```javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -74,7 +76,9 @@ Like the previous type of picking, this one also picks the closest object behind
 
 ![](/assets/giphy %2820%29.gif)
 
-**Example:** Annotate an object by clicking it \(see [Creating Annotations](annotations.md)\):
+#### **Example**
+
+Annotate an object by clicking on it \(see [Creating Annotations](annotations.md)\):
 
 ```javascript
 viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
@@ -120,8 +124,9 @@ if (hit) {
 
 Like the previous type of picking, this one also involves firing a ray through the scene in World-space, to pick an object, but this time we're also getting geometric information about the intersection of the ray with the entity surface.
 
-![](/assets/giphy %2816%29.gif)  
-**Example:** Getting object and surface intersection with a World-space ray:
+#### ![](/assets/giphy %2816%29.gif) **Example**
+
+Getting object and surface intersection with a World-space ray:
 
 ```javascript
 hit = viewer.rayCastSurface([0,0,-100], [0,0,1]); // Origin, dir
