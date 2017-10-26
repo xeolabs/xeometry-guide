@@ -20,7 +20,7 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 
 \[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_transparency) \]
 
-Once everything's looking the way we want it to, we can save the viewer to a JSON bookmark.
+Once everything's looking how we want, we can save the viewer to a JSON bookmark.
 
 ```javascript
 var bookmark = viewer.getBookmark();
