@@ -1,3 +1,7 @@
+---
+description: Welcome to the xeometry glTF model viewing API for WebGL
+---
+
 # xeometry
 
 **xeometry** is an open source \(MIT\) JavaScript library from [@xeographics](https://twitter.com/xeographics) for viewing and interacting with 3D glTF models on WebGL.
