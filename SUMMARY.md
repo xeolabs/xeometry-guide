@@ -5,9 +5,6 @@
 * [Welcome](README.md)
 * [Introduction](introduction.md)
 * [Features](features.md)
-* [API Docs](http://xeometry.org/docs)
-* [Examples](http://xeometry.org/examples)
-* [Downloads](https://github.com/xeolabs/xeometry/releases)
 
 ## Getting Started
 
