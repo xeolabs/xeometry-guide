@@ -1,6 +1,6 @@
 # Summary
 
-## xeometry Guide
+## xeometry Programming Guide
 
 * [Welcome](README.md)
 * [Introduction](introduction.md)
@@ -48,6 +48,4 @@
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
 * Creating input controls
-
-
 
