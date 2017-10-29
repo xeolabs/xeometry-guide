@@ -1,6 +1,6 @@
 # Summary
 
-## xeometry
+## xeometry Guide
 
 * [Welcome](README.md)
 * [Introduction](introduction.md)
