@@ -23,7 +23,7 @@ viewer.setUp([0, 1, 0]);
 Panning the camera five units to the left:
 
 ```javascript
-viewer.panCamera([-5, 0, 0]);
+viewer.pan([-5, 0, 0]);
 
 // eye is now [-5, 0, -100]
 // look is now [-5, 0, 0]
@@ -33,7 +33,7 @@ viewer.panCamera([-5, 0, 0]);
 Panning the camera three units upwards:
 
 ```javascript
-viewer.panCamera([0, 3, 0]);
+viewer.pan([0, 3, 0]);
 
 // eye is now [-5, 3, -100]
 // look is now [-5, 3, 0]
@@ -43,7 +43,7 @@ viewer.panCamera([0, 3, 0]);
 Panning the camera ten units backwards:
 
 ```javascript
-viewer.panCamera([0, 0, -10]);
+viewer.pan([0, 0, -10]);
 
 // eye is now [-5, 3 -110]
 // look is now [-5, 3, -10]
