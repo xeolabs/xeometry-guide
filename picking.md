@@ -124,7 +124,7 @@ if (hit) {
 
 Like the previous type of picking, this one also involves firing a ray through the scene in World-space, to pick an object, but this time we're also getting geometric information about the intersection of the ray with the entity surface.
 
-#### ![](/assets/giphy %2816%29.gif) 
+#### ![](/assets/giphy %2816%29.gif)
 
 #### **Example**
 
