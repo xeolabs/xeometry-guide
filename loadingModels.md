@@ -55,7 +55,7 @@ viewer.loadModel("saw2", "./Reciprocating_Saw.gltf",  function () {
 Unloading a model:
 
 ```javascript
-viewer.unloadModel("gearbox");
+viewer.destroy("gearbox");
 ```
 
 Clearing everything from the viewer:
