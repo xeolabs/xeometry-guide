@@ -4,7 +4,7 @@ description: >-
   models on WebGL
 ---
 
-# xeometry Programming Manual
+# xeometry Programming Guide
 
 **xeometry** is an open source \(MIT\) JavaScript library from [@xeographics](https://twitter.com/xeographics) for viewing and interacting with 3D glTF models on WebGL.
 
