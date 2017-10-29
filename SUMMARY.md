@@ -1,5 +1,6 @@
 # Summary
 
+## xeometry Programming Guide
 
 * [Welcome](README.md)
 * [Introduction](introduction.md)
