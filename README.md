@@ -12,7 +12,7 @@ It lets you load multiple models and show, hide, move, query, measure, xray, sli
 
 > * [Concept](introduction.html)
 * [Examples](http://xeometry.org/examples)
-* [API Documentation](http://xeometry.org/docs)
+* [API Docs](http://xeometry.org/docs)
 * [Downloads](https://github.com/xeolabs/xeometry/releases)
 * [Source code](https://github.com/xeolabs/xeometry)
 
