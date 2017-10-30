@@ -2,7 +2,7 @@
 
 ## xeometry Programming Guide
 
-* [Introduction](README.md)
+* [Welcome](README.md)
 * [Concept](introduction.md)
 * [Features](features.md)
 
