@@ -1,5 +1,7 @@
 # Concept
 
+xeometry is a WebGL-based library for viewing and interacting with 3D glTF models.
+
 A xeometry [Viewer](http://xeometry.org/docs/#viewer) is a single class that wraps the [xeogl](http://xeogl.org) 3D engine in a set of simple data-driven methods that focus on loading glTF models and manipulating scene elements to create 3D presentations.
 
 Being data-driven, the Viewer is also able to track all your scene updates, and can save and load JSON bookmarks of its runtime state.
