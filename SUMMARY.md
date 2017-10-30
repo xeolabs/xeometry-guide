@@ -2,8 +2,8 @@
 
 ## xeometry Programming Guide
 
-* [Welcome](README.md)
-* [Introduction](introduction.md)
+* [Introduction](README.md)
+* [Concept](introduction.md)
 * [Features](features.md)
 
 ## Getting Started
