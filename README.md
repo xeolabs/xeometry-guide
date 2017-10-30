@@ -10,7 +10,7 @@ description: >-
 
 It lets you load multiple models and show, hide, move, query, measure, xray, slice and annotate their objects, through a set of simple data-driven functions. Use it to build 3D viewer apps and custom interactive presentations of glTF content.
 
-This user guide aims to TODO TODO starting with [Concept]().
+This user guide complements the [API docs]() and [examples]() to explain the TODO TODO starting with [Concept]().
 
 
 
