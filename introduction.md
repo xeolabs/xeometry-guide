@@ -1,4 +1,4 @@
-# Introduction
+# Concept
 
 xeometry is an open source JavaScript API for interactively viewing glTF models on WebGL.
 
