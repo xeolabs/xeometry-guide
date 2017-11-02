@@ -142,7 +142,7 @@ if (hit) {
 
 ## Making things unpickable
 
-Sometimes we want to be able to pick **through** things, like windows. We can do this by setting objects unpickable.
+Sometimes we want to be able to pick _through_ things, like windows. We can do this by setting objects unpickable.
 
 #### Examples
 
