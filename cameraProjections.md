@@ -27,10 +27,11 @@ viewer.setProjection("perspective");
 Set perspective projection properties:
 
 ```javascript
-viewer.setPerspectiveFOV(45); // Field of view in degrees
+viewer.setPerspectiveFOV(50); // Field of view in degrees
 viewer.setPerspectiveNear(0.1);
 viewer.setPerspectiveFar(10000);
 ```
 
 Note that you can get and set properties for each projection at any time, regardless of which one is active.
+
 
