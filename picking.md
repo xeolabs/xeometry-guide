@@ -140,5 +140,29 @@ if (hit) {
 }
 ```
 
+## Making objects and models unpickable
+
+Sometimes we want to be able to pick **through** things, like windows. We can do this by setting objects unpickable.
+
+#### Examples
+
+Making a couple of objects unpickable:
+
+```javascript
+viewer.setUnpickable(["gearbox#1", "gearbox#1"]);
+```
+
+Making a whole model unpickable:
+
+```javascript
+viewer.setUnpickable("gearbox");
+```
+
+Making objects of given types unpickable \(in this case IFC windows and spaces\):
+
+```javascript
+viewer.setUnpickable(["IfcWindow", "IfcSpace]);
+```
+
 
 
