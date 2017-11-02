@@ -140,7 +140,7 @@ if (hit) {
 }
 ```
 
-## Making objects and models unpickable
+## Making things unpickable
 
 Sometimes we want to be able to pick **through** things, like windows. We can do this by setting objects unpickable.
 
