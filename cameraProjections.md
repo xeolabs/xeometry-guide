@@ -4,13 +4,13 @@ You can switch the camera between perspective and orthographic projection at any
 
 ### Examples
 
-Switch camera to orthographic projection:
+Switching the camera to orthographic projection:
 
 ```javascript
 viewer.setProjection("ortho");
 ```
 
-Set orthographic projection properties:
+Setting the camera's orthographic projection properties:
 
 ```javascript
 viewer.setOrthoScale(2.0); // How many units to fit within view volume
@@ -18,13 +18,13 @@ viewer.setOrthoNear(0.1);
 viewer.setOrthoFar(8000);
 ```
 
-Switch camera to perspective projection:
+Switching the camera to perspective projection:
 
 ```javascript
 viewer.setProjection("perspective");
 ```
 
-Set perspective projection properties:
+Setting perspective projection properties:
 
 ```javascript
 viewer.setPerspectiveFOV(45); // Field of view in degrees
