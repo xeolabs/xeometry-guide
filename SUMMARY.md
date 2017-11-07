@@ -28,6 +28,10 @@
 * [Camera Projections](cameraProjections.md)
 * [CameraControl Helper](cameraControlHelper.md)
 
+## Lighting
+
+* [Lighting](lighting.md)
+
 ## Effects
 
 * [Visibility](visibility.md)

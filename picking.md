@@ -30,7 +30,7 @@ Note that we'll only get a normal if the object's geometry has normals, and UV c
 
 This type of picking is the simplest: we pick the closest object behind the given canvas coordinates. This is equivalent to firing a ray through the canvas, down the negative Z-axis, to find the first object it hits.
 
-![](/assets/giphy %2818%29.gif)
+![](/assets/pickObject.gif)
 
 #### **Examples**
 
@@ -74,7 +74,7 @@ viewer.getOverlay().addMouseEventListener("mouseclick", function(e) {
 
 Like the previous type of picking, this one also picks the closest object behind the given canvas coordinates, but also gets geometric information about the point on the object's surface that lies right behind those canvas coordinates.
 
-![](/assets/giphy %2820%29.gif)
+![](/assets/pickSurface.gif)
 
 #### **Example**
 
@@ -124,7 +124,7 @@ if (hit) {
 
 Like the previous type of picking, this one also involves firing a ray through the scene in World-space, to pick an object, but this time we're also getting geometric information about the intersection of the ray with the entity surface.
 
-#### ![](/assets/giphy %2816%29.gif)
+#### ![](/assets/rayPickSurface.gif)
 
 #### **Example**
 

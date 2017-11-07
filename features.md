@@ -13,7 +13,7 @@ Things you can do through the xeometry API:
 * Move the camera to fit objects in view - see [_Fitting things in view_](fittingThingsInView.md)
 * Pin annotations on objects - see [_Annotations_](annotations.md)
 * Create custom clipping planes - see [_Clipping_](clipping.md)
-* Create light sources - see [_Creating light sources_](creatingLightSources.md)
+* Create light sources - see [_Lighting_](lighting.md)
 * Draw outlines around objects to emphasise them - see [_Outlining_](outlining.md)
 * Query 3D boundaries of models and objects - see [_Querying Boundaries_](queryingBoundaries.md)
 * Query 3D geometry of objects - see [_Querying Geometry_](queryingGeometry.md)
@@ -21,5 +21,6 @@ Things you can do through the xeometry API:
 * Take canvas snaphots - see [_Canvas snapshots_](canvasSnapshots.md)
 * Save and load JSON bookmarks of viewer state - see [_Bookmarking_](bookmarking.md)
 
-There are bound to be some things the API doesn't do for your app. If your requirements are within the scope of viewing and manipulating glTF content, then please [log the issue](TODO) for discussion.
+There are bound to be some things the API doesn't do for your app. If your requirements are within the scope of viewing
+and manipulating glTF content, then please [log the issue](TODO) for discussion.
 
