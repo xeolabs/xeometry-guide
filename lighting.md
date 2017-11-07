@@ -4,13 +4,11 @@ xeometry lets you create and animate an unlimited number of custom light sources
 
 Light sources come in three types:
 
- * "ambient" - ambient light source with _color_ and _intensity_,
- * "point" - positional light source with _color_, _pos_, _intensity_,  plus _constantAttenuation_, _linearAttenuation_ and _quadraticAttenuation_,
- * "dir" - directional light source with _color_, _dir_ and _intensity_
+ * _"ambient"_ - ambient light source with _color_ and _intensity_,
+ * _"point"_ - positional light source with _color_, _pos_, _intensity_,  plus _constantAttenuation_, _linearAttenuation_ and _quadraticAttenuation_,
+ * _"dir"_ - directional light source with _color_, _dir_ and _intensity_
 
-The _color_ properties are RGB, with each component having range ````[0..1]````. The _intensity_ property is a scaling
-factor in range ````[0..1]```, which governs how much each light source contributes to overall illumination. The and _pos_
-and _dir_ properties are World-space 3D position and direction, respectively.
+The _color_ properties are RGB, with each component having range ````[0..1]````. The _intensity_ property is a scaling factor in range ````[0..1]```, which governs how much each light source contributes to overall illumination. The and _pos_and _dir_ properties are World-space 3D position and direction, respectively.
 
 The attenuation properties for _point_ lights determine how light intensity decreases in proportion to distance from _pos_.
 
@@ -21,13 +19,13 @@ or point light sources on the lowest-end WebGL-compatible GPUs.
 
 Removing all light sources:
 
-```JavaScript
+````javascript
 viewer.destroyLights();
-```
+````
 
 Creating some custom ambient, directional and point lights:
 
-```JavaScript
+````javascript
 // Create a green ambient light
 viewer.createLight("myAmbientLight", {
     type: "ambient",
@@ -50,38 +48,38 @@ viewer.createLight("myPointLight", {
     pos: [1,1,-1],
     intensity: 1.0
 });
-```
+````
 
 Getting the IDs of the lights in your viewer:
 
-```JavaScript
+```javascript
 var lights = viewer.getLights();
 // Returns ["myAmbientLight", "myDirLight", "myPointLight"]
 ```
 
 Changing the color of the ambient light to yellow, while reducing its intensity:
 
-```JavaScript
+```javascript
 viewer.setColor("myAmbientLight", [1, 1, 0]);
 viewer.setIntensity(0.4);
 ```
 
 Changing the direction of the directional light, to make it shine downwards:
 
-```JavaScript
+```javascript
 viewer.setDir("myDirLight", [0, -1, 0]);
 ```
 
 Changing the position of the point light:
 
-```JavaScript
+```javascript
 viewer.setDir("myPointLight", [-1, -1, 0]);
 ```
 
 Note that xeometry will ignore (but log) attempts to set properties that don't exist on the target light source. For example,
 if you try to set the direction of an ambient light, like so:
 
-```JavaScript
+```javascript
 viewer.setDir("myAmbientLight", [1, -1, 1]);
 ```
 
