@@ -1,10 +1,14 @@
 # Rotating the Camera
 
-You can rotate the camera about the _eye_ position, to look around in first-person fashion, or about the _look_ position, to orbit the point you're looking at.
+To perform a first-person rotation, you rotate the your camera's _look_ and _up_ around _eye_.  To orbit the point you're looking at, you rotate _eye_ and _up_ around _look_.
 
-The camera is rotated about each axis individually, by increments given in degrees.
+The camera's pitch rotation is around its local horizontal axis, which is perpendicular to its _eye_-&gt;_look_ and _up_ vectors. Its roll rotation is around its _eye_-&gt;_look_ vector.
 
-Vertical rotation is gimbal-locked to the World-space Y-axis by default. You can disable that to make the camera pivot about its _up_ vector, for a free trackball type rotation.
+The camera is gimbal-locked by default. This means that its yaw rotation spins around the World-space Y-axis. This is helpful to avoid disorientation and makes the rotation easier to control with the mouse. When you disable gimbal lock, the camera's yaw rotation spins around its _up_ vector, which allows it to rotate freely, like a trackball.
+
+Rotation degrees are incremental, ie. relative to the camera's current position.
+
+> _Recall that as you rotate, translate and pan the camera, the only state that xeometry remembers is the camera's current eye, look and up values \(ie. it doesn't remember any rotation angles\)._
 
 ### Examples
 
@@ -14,27 +18,25 @@ Disabling gimbal locking:
 viewer.lockGimbalY(false);
 ```
 
-Rotating the camera's `eye` about `look`, pivoting around `up`:
+Rotating the camera's _eye_ about _look_, pivoting around _up_:
 
 ```javascript
 viewer.rotateEyeY(10);
 ```
 
-Rotate the camera's `eye` about `look`, pivoting around the axis orthogonal to `eye->look` and `up`:
+Rotate the camera's _eye_ about _look_, pivoting around the axis orthogonal to _eye_-&gt;_look_ and _up_:
 
 ```javascript
 viewer.rotateEyeX(10);
 ```
 
-Rotate the camera's `look` about `eye`, pivoting around the World-space Y-axis if  
-gimbal locking is enabled, otherwise pivoting around `up`:
+Rotating the camera's _look_ about _eye_, pivoting around the World-space Y-axis if gimbal locking is enabled, otherwise pivoting around _up_:
 
 ```javascript
 viewer.rotateLookY(10);
 ```
 
-Rotate the camera's `look` about `eye`, pivoting around the World-space Y-axis if  
-gimbal locking is enabled, otherwise pivoting around the axis orthogonal to `eye->look` and `up`:
+Rotating the camera's _look_ about _eye_, pivoting around the World-space Y-axis if gimbal locking is enabled, otherwise pivoting around the axis orthogonal to _eye_-&gt;_look_ and _up_:
 
 ```javascript
 viewer.rotateLookX(10);

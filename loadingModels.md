@@ -1,8 +1,8 @@
 # Loading Models
 
-glTF models are xeometry's unit of content. You can load multiple models into a viewer at the same time, as well as multiple copies of the same models. You can then manipulate the appearance of each model as a unit, or manipulate each of its objects individually.
+glTF 2.0 models are xeometry's unit of content. You can load multiple models into a [Viewer](http://xeolabs.com/xeometry/docs/#viewer) at the same time, as well as multiple copies of the same models. You can then manipulate the appearance of each model as a unit, or manipulate each of its objects individually.
 
-xeometry only loads glTF 2.0 geometries, materials and transforms. It does not \(yet\) load animations, cameras or lights. 
+xeometry only loads glTF 2.0 geometries, materials and transforms. It does not \(yet\) load animations, cameras or lights.
 
 When you load a model, you assign it a unique ID so that you can find it within the viewer. That ID will get prefixed to the IDs of the model's objects. This allows two or more copies of the same model to be loaded at the same time, without ID clashes between their objects. See [_Querying Models and Objects_](queryingModelsAndObjects.md) for more info on querying objects within your models.
 
@@ -18,6 +18,8 @@ viewer.loadModel("saw", "./Reciprocating_Saw.gltf", function () {
 
 [![](assets/loadModel.png)](http://xeolabs.com/xeometry/examples/#loading_loadModel)
 
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#loading_loadModel) \]
+
 Loading two separate models into a viewer:
 
 ```javascript
@@ -31,6 +33,8 @@ viewer.loadModel("gearbox", "./GearboxAssy.gltf", function () {
 ```
 
 [![](assets/loadTwoModels.png)](http://xeolabs.com/xeometry/examples/#loading_loadTwoModels)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#loading_loadTwoModels) \]
 
 Loading two copies of the same model into a viewer:
 
@@ -46,10 +50,12 @@ viewer.loadModel("saw2", "./Reciprocating_Saw.gltf",  function () {
 
 [![](assets/loadSameModelTwice.png)](http://xeolabs.com/xeometry/examples/#loading_sameModelTwice)
 
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#loading_loadTwoModels) \]
+
 Unloading a model:
 
 ```javascript
-viewer.unloadModel("gearbox");
+viewer.destroy("gearbox");
 ```
 
 Clearing everything from the viewer:

@@ -1,13 +1,10 @@
 # Transparency
 
-You can make objects transparent, to reveal objects behind or inside them.
-
-Another way to reveal interior objects is by slicing open the outer objects - see [_Clipping_](clipping.md).
+You can make objects in your viewer transparent, to reveal other objects behind or inside them.
 
 ### Example
 
-In the example below, we'll position the camera and load a glTF model of a reciprocating saw. When the model has loaded,
-we'll make a couple of its handle objects transparent, to reveal its inner workings.
+In the example below, we'll position the camera and load a glTF model of a reciprocating saw. When the model has loaded, we'll make a couple of its handle objects transparent, to reveal its inner workings.
 
 ```javascript
 var viewer = new xeometry.Viewer();
@@ -21,5 +18,7 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ```
 
-[![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#guidebook_transparency)
+[![](assets/transparency.png)](http://xeolabs.com/xeometry/examples/#effects_transparency)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_transparency) \]
 

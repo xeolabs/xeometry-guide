@@ -1,18 +1,20 @@
 # Controlling the Camera
 
-A viewer has a single camera that you can move around the scene.
+A xeometry viewer has a camera that you can move around the scene.
 
 The camera's position is represented by three World-space vectors:
 
 * _eye_ - the position of your eye,
-* _look_ - the position of the point you're looking at
+* _look_ - the point you're looking at
 * _up_ - the direction of "up"
 
-You can set and get those directly, to manage the camera position.
+Set and get those properties to manage the camera position.
+
+> _Note that these properties are the only state that xeometry tracks for the camera position. In other words, as you rotate, pan and zoom the camera, xeometry does not remember your rotation angles or translation offsets._
 
 ### Examples
 
-Setting the camera position by setting _eye_, _look_ and _up_ separately:
+Setting _eye_, _look_ and _up_ separately:
 
 ```javascript
 viewer.setEye([0,0,-100]);

@@ -1,6 +1,6 @@
 # Querying Geometry
 
-Each object in your viewer has a geometry, which describes its shape.
+Each object in your xeometry viewer has a geometry, which describes its shape.
 
 A geometry consists of:
 

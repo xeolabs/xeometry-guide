@@ -1,6 +1,6 @@
 # Camera Projections
 
-You can switch the camera between perspective and orthographic projection at any time.
+You can switch the camera between perspective and orthographic projections at any time.
 
 ### Examples
 
@@ -27,10 +27,11 @@ viewer.setProjection("perspective");
 Setting perspective projection properties:
 
 ```javascript
-viewer.setPerspectiveFOV(45); // Field of view in degrees
+viewer.setPerspectiveFOV(50); // Field of view in degrees
 viewer.setPerspectiveNear(0.1);
 viewer.setPerspectiveFar(10000);
 ```
 
 Note that you can get and set properties for each projection at any time, regardless of which one is active.
+
 

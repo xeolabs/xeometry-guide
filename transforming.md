@@ -1,7 +1,8 @@
 ## Transforming
 
-You can independently transform each model and object in your viewer. A transform consists of the following operations,  
-applied in this order:
+You can independently transform each model and object in your viewer.
+
+A transform consists of the following operations, applied in this order:
 
 1. scale
 2. X-axis rotation \(degrees\),
@@ -32,7 +33,9 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ```
 
-[![](assets/transforms.png)](http://xeolabs.com/xeometry/examples/#guidebook_transforming)
+[![](/assets/transforms.png)](http://xeolabs.com/xeometry/examples/#effects_transforming)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_transforming) \]
 
 ### More examples
 

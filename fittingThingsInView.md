@@ -1,6 +1,6 @@
 # Fitting Things in View
 
-You can fly or jump the camera to fit given models, objects, types or boundaries in view.
+You can fly or jump a xeometry viewer's camera to fit specified models, objects, types or boundaries in view.
 
 ### Examples
 

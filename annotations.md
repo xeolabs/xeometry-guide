@@ -71,5 +71,11 @@ viewer.loadModel("saw", "ReciprocatingSaw.gltf", function () {
 });
 ```
 
-[![](assets/annotations.png)](http://xeolabs.com/xeometry/examples/#guidebook_annotations)
+[![](assets/annotations.png)](http://xeolabs.com/xeometry/examples/#effects_annotations)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_annotations) \]
+
+
+
+
 

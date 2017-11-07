@@ -1,6 +1,8 @@
 # Outlining
 
-You can emphasize objects in your viewer by displaying outlines around them.
+You can emphasize objects in your viewer by showing outlines around them.
+
+> _**Under the hood: **This is currently implemented using the stencil buffer technique, in which a halo is rendered by drawing a glowing copy of the mesh in the background, expanded along its vertex normals. This doesn't work so well for non-smooth vertex normals though, so will be probably be replaced by some sort of post-processing edge-detection technique at some point._
 
 ### Example
 
@@ -20,7 +22,9 @@ viewer.loadModel("gearbox", "GearboxAssy.gltf", function () {
 });
 ```
 
-[![](assets/outlining.png)](http://xeolabs.com/xeometry/examples/#guidebook_outlining)
+[![](assets/outlining.png)](http://xeolabs.com/xeometry/examples/#effects_outlining)
+
+\[ [Run demo](http://xeolabs.com/xeometry/examples/#effects_outlining) \]
 
 ### More examples
 
