@@ -23,7 +23,7 @@ Removing all light sources:
 viewer.destroyLights();
 ````
 
-Creating some custom ambient, directional and point lights:
+Creating custom ambient, directional and point lights:
 
 ````javascript
 // Create a green ambient light
