@@ -22,6 +22,31 @@ Getting the World-space vertex positions of the geometry of the object:
 
 ```javascript
 var positions = viewer.getPositions("saw#43");
+// Eg. [2,2,2,-2,2,2,-2,-2,2,2,-2,2,2,2,2,2,-2,2,2,-2,-2,2,2,-2,
+
+            // v0-v1-v6-v1 top
+            2, 2, 2,
+            2, 2, -2,
+            -2, 2, -2,
+            -2, 2, 2,
+
+            // v1-v6-v7-v2 left
+            -2, 2, 2,
+            -2, 2, -2,
+            -2, -2, -2,
+            -2, -2, 2,
+
+            // v7-v4-v3-v2 bottom
+            -2, -2, -2,
+            2, -2, -2,
+            2, -2, 2,
+            -2, -2, 2,
+
+            // v4-v7-v6-v1 back
+            2, -2, -2,
+            -2, -2, -2,
+            -2, 2, -2,
+            2, 2, -2]
 ```
 
 Note that the value of these positions will change whenever we transform the object \(see [_Transforming_](transforming.md)\).
