@@ -8,12 +8,11 @@ Light sources come in three types:
 * _"point"_ - positional light source with _color_, _pos_, _intensity_,  plus _constantAttenuation_, _linearAttenuation_ and _quadraticAttenuation_,
 * _"dir"_ - directional light source with _color_, _dir_ and _intensity_
 
-The _color_ properties are RGB, with each component having range `[0..1]`. The _intensity_ property is a scaling factor in range ```[0..1]``, which governs how much each light source contributes to overall illumination. The and _pos _and_ dir_ properties are World-space 3D position and direction, respectively.
+The _color_ properties are RGB, with each component having range `[0..1]`. The _intensity_ property is a scaling factor in range ```[0..1]``, which governs how much each light source contributes to overall illumination. The and _pos \_and_ dir\_ properties are World-space 3D position and direction, respectively.
 
 The attenuation properties for _point_ lights determine how light intensity decreases in proportion to distance from _pos_.
 
-The number of light sources is actually limited by your GPU, but you can safely have at least four or five directional  
-or point light sources on the lowest-end WebGL-compatible GPUs.
+The number of light sources is actually limited by your GPU, but you can safely have at least four or five directional or point light sources on the lowest-end WebGL-compatible GPUs.
 
 ## Examples
 
