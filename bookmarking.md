@@ -74,8 +74,7 @@ we made transparent.
 
 #### Loading a bookmark
 
-We can now load the bookmark back into our viewer, or into a different viewer, to restore the scene that we created  
-programmatically earlier:
+We can now load the bookmark back into our viewer, or into a different viewer, to restore the scene that we created programmatically earlier:
 
 ```javascript
 viewer.setBookmark(bookmark, function() { /* Loaded */ });
