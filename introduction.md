@@ -1,6 +1,6 @@
 # Concept
 
-A xeometry [Viewer](http://xeometry.org/docs/#viewer) is a JavaScript class that wraps a [xeogl](http://xeogl.org) engine in a set of simple data-driven methods that focus on loading glTF models and manipulating their scene elements, to create cool 3D presentations on WebGL.
+A xeometry [Viewer](http://xeometry.org/docs/#viewer) is a JavaScript class that wraps [xeogl](http://xeogl.org) in a set of simple data-driven methods that focus on loading glTF models and manipulating their scene elements, to create cool 3D presentations on WebGL.
 
 Being data-driven, the Viewer is able to track all your scene updates, and can save and load complete snapshots of its runtime state as JSON bookmarks.
 
@@ -35,7 +35,7 @@ var viewer2 = new xeometry.Viewer();
 viewer2.setBookmark(bookmark, function() { /* Loaded */ });
 ```
 
-So that's the general idea of xeometry: a complete viewer API that lets you delve into your glTF models and dynamically tweak bits and pieces, while being totally data-driven,  which lets you save and load your changes.
+So that's the general idea of xeometry: a viewer API that lets you delve into your glTF models and dynamically tweak bits and pieces, while being totally data-driven,  which lets you save and load your changes.
 
 See [Features](/features.md) for an overview of the things that you can do through the xeometry API.
 
